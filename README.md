@@ -1,4 +1,6 @@
-# Fable 5.2: small no-chain-of-thought replication
+# no-cot-replication
+
+Small no-chain-of-thought replication on Fable 5.2.
 
 A low-budget, three-task replication inspired by **Neel Nanda's [Astra can do a concerning amount with no chain of thought](https://www.lesswrong.com/posts/eRmzz8J8Qkzqvzrgg/astra-can-do-a-concerning-amount-with-no-chain-of-thought)**. The benchmark data, prompt construction, and answer grader come from Neel's [nocot-bench](https://github.com/neelnanda-io/nocot-bench). This repository contributes the native-Anthropic runner, fixed subset, and results; it is not the original benchmark or an endorsement by its author.
 
