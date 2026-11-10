@@ -1,0 +1,243 @@
+{
+  "method": "Longest path through binary-operation nodes in the expression AST; numeric signs do not count as arithmetic steps.",
+  "limitations": [
+    "Structural depth is not shortcut-aware effective depth. Algebraic simplifications and integer floor/modulo can erase dependencies.",
+    "This is not a reconstruction of Neel Nanda's perturbation-based, cross-task normalized 7.2-step estimate.",
+    "Only three distinct items have structural depth 6, the maximum sampled; no well-supported 50% crossing is observed.",
+    "Two draws of the same item are not independent new problems."
+  ],
+  "table": [
+    {
+      "structural_depth": 1,
+      "unique_items": 1,
+      "draws": {
+        "1": {
+          "correct": 1,
+          "n": 1
+        },
+        "2": {
+          "correct": 1,
+          "n": 1
+        }
+      }
+    },
+    {
+      "structural_depth": 2,
+      "unique_items": 4,
+      "draws": {
+        "1": {
+          "correct": 4,
+          "n": 4
+        },
+        "2": {
+          "correct": 4,
+          "n": 4
+        }
+      }
+    },
+    {
+      "structural_depth": 3,
+      "unique_items": 5,
+      "draws": {
+        "1": {
+          "correct": 5,
+          "n": 5
+        },
+        "2": {
+          "correct": 5,
+          "n": 5
+        }
+      }
+    },
+    {
+      "structural_depth": 4,
+      "unique_items": 7,
+      "draws": {
+        "1": {
+          "correct": 7,
+          "n": 7
+        },
+        "2": {
+          "correct": 7,
+          "n": 7
+        }
+      }
+    },
+    {
+      "structural_depth": 5,
+      "unique_items": 5,
+      "draws": {
+        "1": {
+          "correct": 4,
+          "n": 5
+        },
+        "2": {
+          "correct": 4,
+          "n": 5
+        }
+      }
+    },
+    {
+      "structural_depth": 6,
+      "unique_items": 3,
+      "draws": {
+        "1": {
+          "correct": 2,
+          "n": 3
+        },
+        "2": {
+          "correct": 2,
+          "n": 3
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "problem_number": 40,
+      "binary_operator_count": 2,
+      "structural_depth": 2
+    },
+    {
+      "problem_number": 124,
+      "binary_operator_count": 2,
+      "structural_depth": 2
+    },
+    {
+      "problem_number": 85,
+      "binary_operator_count": 2,
+      "structural_depth": 2
+    },
+    {
+      "problem_number": 52,
+      "binary_operator_count": 1,
+      "structural_depth": 1
+    },
+    {
+      "problem_number": 41,
+      "binary_operator_count": 2,
+      "structural_depth": 2
+    },
+    {
+      "problem_number": 120,
+      "binary_operator_count": 4,
+      "structural_depth": 3
+    },
+    {
+      "problem_number": 51,
+      "binary_operator_count": 4,
+      "structural_depth": 3
+    },
+    {
+      "problem_number": 17,
+      "binary_operator_count": 4,
+      "structural_depth": 3
+    },
+    {
+      "problem_number": 60,
+      "binary_operator_count": 4,
+      "structural_depth": 4
+    },
+    {
+      "problem_number": 99,
+      "binary_operator_count": 4,
+      "structural_depth": 3
+    },
+    {
+      "problem_number": 69,
+      "binary_operator_count": 6,
+      "structural_depth": 4
+    },
+    {
+      "problem_number": 81,
+      "binary_operator_count": 5,
+      "structural_depth": 3
+    },
+    {
+      "problem_number": 33,
+      "binary_operator_count": 5,
+      "structural_depth": 4
+    },
+    {
+      "problem_number": 74,
+      "binary_operator_count": 5,
+      "structural_depth": 4
+    },
+    {
+      "problem_number": 131,
+      "binary_operator_count": 5,
+      "structural_depth": 5
+    },
+    {
+      "problem_number": 142,
+      "binary_operator_count": 7,
+      "structural_depth": 5
+    },
+    {
+      "problem_number": 147,
+      "binary_operator_count": 7,
+      "structural_depth": 5
+    },
+    {
+      "problem_number": 144,
+      "binary_operator_count": 7,
+      "structural_depth": 5
+    },
+    {
+      "problem_number": 143,
+      "binary_operator_count": 7,
+      "structural_depth": 6
+    },
+    {
+      "problem_number": 140,
+      "binary_operator_count": 7,
+      "structural_depth": 4
+    },
+    {
+      "problem_number": 22,
+      "binary_operator_count": 8,
+      "structural_depth": 4
+    },
+    {
+      "problem_number": 73,
+      "binary_operator_count": 10,
+      "structural_depth": 6
+    },
+    {
+      "problem_number": 57,
+      "binary_operator_count": 8,
+      "structural_depth": 4
+    },
+    {
+      "problem_number": 65,
+      "binary_operator_count": 12,
+      "structural_depth": 6
+    },
+    {
+      "problem_number": 23,
+      "binary_operator_count": 8,
+      "structural_depth": 5
+    }
+  ],
+  "existing_average_input_tokens": 1747.68,
+  "existing_average_output_tokens": 11.84,
+  "new_model_calls": 0,
+  "proposed_followup": {
+    "status": "not run; pending budget review",
+    "initial_calls": 30,
+    "max_additional_calls": 20,
+    "max_total_calls": 50,
+    "initial_design": "Five new, nondegenerate problems at each of three verified dependent depths, two draws each. Nominal targets 7, 9, 11; audit actual dependency sensitivity locally before inference.",
+    "expansion_rule": "Use at most ten further unique problems, two draws each, to bracket/refine the transition. Report unresolved if the cap is reached; do not extrapolate a precise threshold.",
+    "input_token_planning_estimate": "About 55,000\u201395,000 tokens across 30\u201350 calls, based on the existing ~1,748 input tokens/call with allowance for longer questions. Not a hard input-token bound.",
+    "expected_output_tokens_if_no_cot": "About 360\u2013600, using the existing ~12 output tokens/call.",
+    "max_output_tokens_per_call": 300,
+    "max_total_output_tokens": 15000,
+    "notes": [
+      "Reusing canonical demonstrations preserves comparability but dominates input cost.",
+      "Select/sensitivity-audit items locally and token-count exact requests before paid execution.",
+      "A single-task threshold is a cheaper diagnostic; reproducing the headline normalized metric needs multiple serial task families.",
+      "No dollar estimate without verified Fable 5.2 account pricing."
+    ]
+  }
+}

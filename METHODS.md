@@ -54,3 +54,20 @@ python analyze.py
 `NOCOT_BENCH` can select a different path to the pinned benchmark checkout. Calls execute sequentially, append metadata immediately, and resume by stage/item/draw. HTTP errors stop the run without automatic retries. Main-stage pilot reuse is explicitly marked, so token totals do not double-count it. Do not delete output files unless intentionally starting another paid run.
 
 `items.json` stores only upstream item IDs. `plan.json` records the frozen subset and recipe. Private raw responses and credentials are excluded by `.gitignore`.
+
+## Free depth analysis
+
+`python depth_analysis.py` analyzes the saved arithmetic responses without network calls. [Output and proposed budget](results/depth_analysis.json).
+
+| Structural dependency depth | Correct per draw | Unique problems |
+|---|---:|---:|
+| 1 | 1/1 | 1 |
+| 2 | 4/4 | 4 |
+| 3 | 5/5 | 5 |
+| 4 | 7/7 | 7 |
+| 5 | 4/5 | 5 |
+| 6 | 2/3 | 3 |
+
+Both draws agree. Structural depth counts the longest binary-operation dependency path, ignoring numeric signs. It is not shortcut-aware effective depth, and does not reproduce Neel's perturbation-based, cross-task calibrated 7.2-step estimate. The maximum sampled depth has only three unique items; no reliable 50% threshold can be fitted.
+
+A proposed extension starts with 30 responses, with a cap of 50 total: roughly 55k–95k input tokens and 360–600 expected output tokens if no-CoT holds. The hard output cap is 15,000 tokens. These are planning estimates; exact requests should be token-counted before spending. No extension has run.
