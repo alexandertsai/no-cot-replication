@@ -1,0 +1,46 @@
+{
+  "model": "claude-fable-5-2",
+  "seed": 20261110,
+  "repository_commit": "beb2ffcf73b657a445e8a7b797d7c9b0e249b570",
+  "tasks": {
+    "arithmetic": {
+      "arithmetic:ops1-2": 5,
+      "arithmetic:ops3-4": 5,
+      "arithmetic:ops5-6": 5,
+      "arithmetic:ops7": 5,
+      "arithmetic:ops8-12": 5
+    },
+    "brew": {
+      "brew:lo": 5,
+      "brew:mid": 5
+    },
+    "shortpath": {
+      "shortpath:tier1_6n": 5,
+      "shortpath:tier2_9n": 5,
+      "shortpath:tier3_12n": 5
+    }
+  },
+  "unique_items": 50,
+  "draws": 2,
+  "main_calls": 100,
+  "pilot_calls": 10,
+  "notes": [
+    "Fixed selection before results; no task rewording.",
+    "Use native Anthropic messages API; inspect thinking_tokens, full content and stop_reason.",
+    "Pilot must pass on two fresh draws before main evaluation.",
+    "Use five separate high-effort positive-control calls with bounded output; no further expansion if usage counter cannot be validated.",
+    "Report per-rung accuracy, invalid/blind/missing counts and uncertainty; no overall NCRI rank.",
+    "Use canonical available shots first. Reducing shots is a separately labelled token-saving adaptation."
+  ],
+  "recipe": {
+    "route": "https://api.anthropic.com/v1/messages",
+    "thinking": "adaptive",
+    "effort": "low",
+    "system": "upstream NO_DELIB_SYSTEM_TEXT_V2",
+    "output": "upstream final_answer JSON schema",
+    "max_tokens": 300,
+    "shots": "all available canonical shots per bank: arithmetic 10, brew 1, shortpath 3",
+    "temperature": "omitted",
+    "prefill": false
+  }
+}

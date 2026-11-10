@@ -1,0 +1,5 @@
+private/
+.env
+.env.*
+__pycache__/
+nocot-bench/

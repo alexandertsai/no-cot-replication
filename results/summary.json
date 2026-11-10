@@ -1,0 +1,142 @@
+{
+  "model": "claude-fable-5-2",
+  "tasks": {
+    "arithmetic": {
+      "responses": 50,
+      "unique_items": 25,
+      "correct": 46,
+      "accuracy": 0.92,
+      "draws": {
+        "1": {
+          "correct": 23,
+          "n": 25
+        },
+        "2": {
+          "correct": 23,
+          "n": 25
+        }
+      },
+      "first_draw_wilson95": [
+        0.7503389104960532,
+        0.9777795987151519
+      ],
+      "conditional_valid_accuracy": 0.92,
+      "invalid": 0,
+      "blind": 0,
+      "rungs": {
+        "arithmetic:ops1-2": {
+          "correct": 10,
+          "n": 10
+        },
+        "arithmetic:ops3-4": {
+          "correct": 10,
+          "n": 10
+        },
+        "arithmetic:ops5-6": {
+          "correct": 10,
+          "n": 10
+        },
+        "arithmetic:ops7": {
+          "correct": 8,
+          "n": 10
+        },
+        "arithmetic:ops8-12": {
+          "correct": 8,
+          "n": 10
+        }
+      }
+    },
+    "brew": {
+      "responses": 20,
+      "unique_items": 10,
+      "correct": 18,
+      "accuracy": 0.9,
+      "draws": {
+        "1": {
+          "correct": 9,
+          "n": 10
+        },
+        "2": {
+          "correct": 9,
+          "n": 10
+        }
+      },
+      "first_draw_wilson95": [
+        0.595849973204771,
+        0.9821237869049263
+      ],
+      "conditional_valid_accuracy": 0.9,
+      "invalid": 0,
+      "blind": 0,
+      "rungs": {
+        "brew:lo": {
+          "correct": 10,
+          "n": 10
+        },
+        "brew:mid": {
+          "correct": 8,
+          "n": 10
+        }
+      }
+    },
+    "shortpath": {
+      "responses": 30,
+      "unique_items": 15,
+      "correct": 30,
+      "accuracy": 1.0,
+      "draws": {
+        "1": {
+          "correct": 15,
+          "n": 15
+        },
+        "2": {
+          "correct": 15,
+          "n": 15
+        }
+      },
+      "first_draw_wilson95": [
+        0.7961166989641604,
+        1.0
+      ],
+      "conditional_valid_accuracy": 1.0,
+      "invalid": 0,
+      "blind": 0,
+      "rungs": {
+        "shortpath:tier1_6n": {
+          "correct": 10,
+          "n": 10
+        },
+        "shortpath:tier2_9n": {
+          "correct": 10,
+          "n": 10
+        },
+        "shortpath:tier3_12n": {
+          "correct": 10,
+          "n": 10
+        }
+      }
+    }
+  },
+  "actual_api_calls": 105,
+  "usage": {
+    "input_tokens": 155789,
+    "output_tokens": 1523,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  },
+  "pilot": {
+    "n": 10,
+    "valid": 10
+  },
+  "control": {
+    "n": 5,
+    "nonzero_thinking": 4
+  },
+  "main_total_reasoning_tokens": 0,
+  "notes": [
+    "Intervals describe first-draw selected-item variation; repeated draws are not independent extra items.",
+    "Five items per rung give limited precision. Three selected domains do not establish an NCRI ranking.",
+    "Native usage reports input/output and thinking tokens; an independent total-token discrepancy witness is unavailable.",
+    "Dollar cost is not estimated without verified account pricing."
+  ]
+}
