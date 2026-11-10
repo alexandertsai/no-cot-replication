@@ -1,0 +1,41 @@
+{
+  "source": "https://github.com/neelnanda-io/nocot-bench",
+  "upstream_commit": "beb2ffcf73b657a445e8a7b797d7c9b0e249b570",
+  "scope": "Exact same selected 50 items; published Astra responses, no new Astra calls.",
+  "draws": {
+    "1": {
+      "arithmetic": {
+        "correct": 24,
+        "n": 25,
+        "invalid": 0
+      },
+      "brew": {
+        "correct": 10,
+        "n": 10,
+        "invalid": 0
+      },
+      "shortpath": {
+        "correct": 15,
+        "n": 15,
+        "invalid": 0
+      }
+    },
+    "2": {
+      "arithmetic": {
+        "correct": 24,
+        "n": 25,
+        "invalid": 0
+      },
+      "brew": {
+        "correct": 10,
+        "n": 10,
+        "invalid": 0
+      },
+      "shortpath": {
+        "correct": 15,
+        "n": 15,
+        "invalid": 0
+      }
+    }
+  }
+}
