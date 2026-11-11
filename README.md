@@ -15,6 +15,8 @@ Both models repeated the same outcomes on their second draws. All compared respo
 
 This small subset uses different serving/prompt formats and does not establish an overall model ranking.
 
+**Harder-task follow-up:** both tested prompts produced thinking tokens on the first depth-7 problem, so we stopped after two calls. No depth threshold was measured. [Details](results/hard_summary.json).
+
 Inspired by **Neel Nanda’s [article](https://www.lesswrong.com/posts/eRmzz8J8Qkzqvzrgg/astra-can-do-a-concerning-amount-with-no-chain-of-thought)**, using his [nocot-bench](https://github.com/neelnanda-io/nocot-bench) data and grader.
 
 [Results](results/summary.json) · [Astra comparison](results/astra_comparison.json) · [Methods and reproduction](METHODS.md)

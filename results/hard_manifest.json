@@ -1,0 +1,511 @@
+{
+  "seed": 20261111,
+  "initial_depths": [
+    7,
+    9,
+    11
+  ],
+  "initial_items_per_depth": 5,
+  "two_draws": true,
+  "max_calls": 50,
+  "items": {
+    "4": [
+      {
+        "problem_number": "custom-d4-1",
+        "structural_depth": 4,
+        "binary_operator_count": 6,
+        "expression_sha256": "2cb44762214982498595fd04b9b8a2b4a2697dacf7d779eec4bfe6f23359c83b"
+      },
+      {
+        "problem_number": "custom-d4-2",
+        "structural_depth": 4,
+        "binary_operator_count": 5,
+        "expression_sha256": "b409a95d97208c8a6ec8f13ff0be317df31b97985c39b1c6ec3a660e546a3e9d"
+      },
+      {
+        "problem_number": "custom-d4-3",
+        "structural_depth": 4,
+        "binary_operator_count": 9,
+        "expression_sha256": "d98ae19f043a1bad86c0cab0af918062856a78e59cbb7eab34db3238b950ea94"
+      },
+      {
+        "problem_number": "custom-d4-4",
+        "structural_depth": 4,
+        "binary_operator_count": 5,
+        "expression_sha256": "b969fb75bd47b94ccf71e9d9be0fd5c96394fd037829bb312a377d5330ed06ee"
+      },
+      {
+        "problem_number": "custom-d4-5",
+        "structural_depth": 4,
+        "binary_operator_count": 6,
+        "expression_sha256": "ad623fb5d692473e4227eaf71c70fcf18f5cf062fbd29a7c0ce19ba09e99c738"
+      },
+      {
+        "problem_number": "custom-d4-6",
+        "structural_depth": 4,
+        "binary_operator_count": 8,
+        "expression_sha256": "ae201cb51ceea1095955ab3331ec8f59a909e0476f29c23dfee8c5dbcd852890"
+      },
+      {
+        "problem_number": "custom-d4-7",
+        "structural_depth": 4,
+        "binary_operator_count": 6,
+        "expression_sha256": "23fc3054dd8bf5bd412dae701609a4d09b17bff96ed58e719665f7b7b89dd3ba"
+      },
+      {
+        "problem_number": "custom-d4-8",
+        "structural_depth": 4,
+        "binary_operator_count": 7,
+        "expression_sha256": "cbaa309b4367931dadfdd054fbe3c66529fb5acd436cab74b8b53d8c003a1282"
+      },
+      {
+        "problem_number": "custom-d4-9",
+        "structural_depth": 4,
+        "binary_operator_count": 4,
+        "expression_sha256": "9219be2324e6a2e3220fa82dd88813acf0e48e5cfbc72cee285a0656974b88bf"
+      },
+      {
+        "problem_number": "custom-d4-10",
+        "structural_depth": 4,
+        "binary_operator_count": 7,
+        "expression_sha256": "68979fadb04c752d38c9d64707020ed9af67d170888c4e70828b333b11a7e3ce"
+      }
+    ],
+    "5": [
+      {
+        "problem_number": "custom-d5-1",
+        "structural_depth": 5,
+        "binary_operator_count": 9,
+        "expression_sha256": "8459ca5a9e2cea2938cd1950104cfb1d3bbdde8a4f47f593679a186899b92624"
+      },
+      {
+        "problem_number": "custom-d5-2",
+        "structural_depth": 5,
+        "binary_operator_count": 9,
+        "expression_sha256": "5158a7e4903d2d66f0c2f36d2884041001ae007f76e885ef56e625e80d116aab"
+      },
+      {
+        "problem_number": "custom-d5-3",
+        "structural_depth": 5,
+        "binary_operator_count": 11,
+        "expression_sha256": "d9f1257def9ef84dd20ca518dddc5694f7e3afd2ef7905f1a67cafce4ae64e67"
+      },
+      {
+        "problem_number": "custom-d5-4",
+        "structural_depth": 5,
+        "binary_operator_count": 8,
+        "expression_sha256": "9296c690d69b87a11d846d7e1c6fafd92fe179286d9792683f54d88abb59ff10"
+      },
+      {
+        "problem_number": "custom-d5-5",
+        "structural_depth": 5,
+        "binary_operator_count": 9,
+        "expression_sha256": "1cf3b01126cae5cb45d1ced3db3a0bf32f08bcb98d4b6a4f3cbc252fcd391f2c"
+      },
+      {
+        "problem_number": "custom-d5-6",
+        "structural_depth": 5,
+        "binary_operator_count": 6,
+        "expression_sha256": "27b8a2f6d77684d9f593aae36af954e330411d47e48197bb74241be0ed0dade3"
+      },
+      {
+        "problem_number": "custom-d5-7",
+        "structural_depth": 5,
+        "binary_operator_count": 10,
+        "expression_sha256": "61fb57db2d5df6aa78031ae6b4014f8e93e47a081655fe41348bc1f5431f22ee"
+      },
+      {
+        "problem_number": "custom-d5-8",
+        "structural_depth": 5,
+        "binary_operator_count": 8,
+        "expression_sha256": "e15f325cf66727c60f1724d1189538ca5089c271b3bda3d51dd3eac579680464"
+      },
+      {
+        "problem_number": "custom-d5-9",
+        "structural_depth": 5,
+        "binary_operator_count": 10,
+        "expression_sha256": "2dcfd33d5e432231c0a7b251a0f6d4f7d8616a61cbf7150e65fd05b13144f469"
+      },
+      {
+        "problem_number": "custom-d5-10",
+        "structural_depth": 5,
+        "binary_operator_count": 11,
+        "expression_sha256": "2863020a6e83cea2accba1027d5122ade48ccb718fc129d46da788ba9d655ade"
+      }
+    ],
+    "6": [
+      {
+        "problem_number": "custom-d6-1",
+        "structural_depth": 6,
+        "binary_operator_count": 11,
+        "expression_sha256": "85aa2cff68e84648b9cfb7e7fb87fded410c4cc29803b1d76f210f3c6f20c730"
+      },
+      {
+        "problem_number": "custom-d6-2",
+        "structural_depth": 6,
+        "binary_operator_count": 8,
+        "expression_sha256": "9bf2d8af1c7a5765650fe4cde53f8f18afbab8722c73938b919e895110da8fbb"
+      },
+      {
+        "problem_number": "custom-d6-3",
+        "structural_depth": 6,
+        "binary_operator_count": 11,
+        "expression_sha256": "6072cb402b3d089623e1b254e06e539863ea0390b1667510dccd8a07ae000087"
+      },
+      {
+        "problem_number": "custom-d6-4",
+        "structural_depth": 6,
+        "binary_operator_count": 10,
+        "expression_sha256": "a957eca6e1fce2d62e5b46013f0dcde47f25c64c0c0515907bfbed3f777bc37b"
+      },
+      {
+        "problem_number": "custom-d6-5",
+        "structural_depth": 6,
+        "binary_operator_count": 11,
+        "expression_sha256": "467c6f54a563ed38c4e6ee1d2afa9e46273681ec8d78775e07017fadff2d5b65"
+      },
+      {
+        "problem_number": "custom-d6-6",
+        "structural_depth": 6,
+        "binary_operator_count": 11,
+        "expression_sha256": "aed1ce07b47b70a351f0151abe2f0e81b48f8c2b5299ba2503c817b12f7bf752"
+      },
+      {
+        "problem_number": "custom-d6-7",
+        "structural_depth": 6,
+        "binary_operator_count": 9,
+        "expression_sha256": "6379e04d4a38f97463d498d1aa6296e4d7cfe9cd7475d579ff42a7a01f4b6c7d"
+      },
+      {
+        "problem_number": "custom-d6-8",
+        "structural_depth": 6,
+        "binary_operator_count": 7,
+        "expression_sha256": "66085e4b56196e40805a4f112e808310aaec534d853f412c1b1e12e56f5dd6fc"
+      },
+      {
+        "problem_number": "custom-d6-9",
+        "structural_depth": 6,
+        "binary_operator_count": 8,
+        "expression_sha256": "74ce8904cb1e27976e48f1dcf37c718d4f41780969f4460d8f16fef81330d64d"
+      },
+      {
+        "problem_number": "custom-d6-10",
+        "structural_depth": 6,
+        "binary_operator_count": 13,
+        "expression_sha256": "d3c6b99096c105088b96ee5d0a11ef4574a7ab385f73e12717d551c3091bd5ec"
+      }
+    ],
+    "7": [
+      {
+        "problem_number": "custom-d7-1",
+        "structural_depth": 7,
+        "binary_operator_count": 16,
+        "expression_sha256": "b1caa9e95d0989eb85c49d054a233c0e666f551276d1187a7838235b4e7dd05f"
+      },
+      {
+        "problem_number": "custom-d7-2",
+        "structural_depth": 7,
+        "binary_operator_count": 12,
+        "expression_sha256": "5e4cc8660797a85d849c5e0b7acfabcf8f1dfba9dbbf2a69c738c3a9b9975cab"
+      },
+      {
+        "problem_number": "custom-d7-3",
+        "structural_depth": 7,
+        "binary_operator_count": 13,
+        "expression_sha256": "b7c69fadc4761220c6a49af6aa989b9c0b3fc5854f114c7c90a556051ca1f5cf"
+      },
+      {
+        "problem_number": "custom-d7-4",
+        "structural_depth": 7,
+        "binary_operator_count": 11,
+        "expression_sha256": "fd1ff08aeac4ab5815ab8dc2b6d1b3da1aa5c5658936adfeaddc01a0d399346c"
+      },
+      {
+        "problem_number": "custom-d7-5",
+        "structural_depth": 7,
+        "binary_operator_count": 16,
+        "expression_sha256": "c5ea05479d66089fad886452a2cd0c063ea1e9ca401aaa4b9593546c8319b50a"
+      },
+      {
+        "problem_number": "custom-d7-6",
+        "structural_depth": 7,
+        "binary_operator_count": 10,
+        "expression_sha256": "d73543e64d116dfaecb355343621bda1441387de321c9aa5cb8dd0f34dae4477"
+      },
+      {
+        "problem_number": "custom-d7-7",
+        "structural_depth": 7,
+        "binary_operator_count": 12,
+        "expression_sha256": "3b06a23f102772ec179cc737726a3a9bebdd6e896b603a1dd98d2913f41cf409"
+      },
+      {
+        "problem_number": "custom-d7-8",
+        "structural_depth": 7,
+        "binary_operator_count": 14,
+        "expression_sha256": "86e223567784c872c21b176270738f5fbdeccf191f0113bc156868832684a23c"
+      },
+      {
+        "problem_number": "custom-d7-9",
+        "structural_depth": 7,
+        "binary_operator_count": 14,
+        "expression_sha256": "421bbcee309d4574d673baec0c747ab1bed7c186466bf7029ef6733cedba42f5"
+      },
+      {
+        "problem_number": "custom-d7-10",
+        "structural_depth": 7,
+        "binary_operator_count": 13,
+        "expression_sha256": "c2f4d060edbcc5c4860822d5d2954137321172be39ad7bff6adfb39f3e2c52dd"
+      }
+    ],
+    "8": [
+      {
+        "problem_number": "custom-d8-1",
+        "structural_depth": 8,
+        "binary_operator_count": 14,
+        "expression_sha256": "73ddbb1d7e79c32b3775dea2d9722f36e17b35b675a8a711857d201378f44137"
+      },
+      {
+        "problem_number": "custom-d8-2",
+        "structural_depth": 8,
+        "binary_operator_count": 17,
+        "expression_sha256": "2dacc88c69b624e8e7bc7f6e44af1c8636b1ef94909c1064f78b44af7d1502c3"
+      },
+      {
+        "problem_number": "custom-d8-3",
+        "structural_depth": 8,
+        "binary_operator_count": 18,
+        "expression_sha256": "b1dd435cfb3757e4538cdb772720bfcb0ed27c00e8d89ced637c59dbeded2ad5"
+      },
+      {
+        "problem_number": "custom-d8-4",
+        "structural_depth": 8,
+        "binary_operator_count": 13,
+        "expression_sha256": "8f9dd192764cf444eb649631e902a02836c4f271b85d9453432c73a6c8b9db0c"
+      },
+      {
+        "problem_number": "custom-d8-5",
+        "structural_depth": 8,
+        "binary_operator_count": 17,
+        "expression_sha256": "4b642bf6a2e1b8d7cbf6db23fab70b4abf7b8342648d4d2aa2cc39b57a7ca85a"
+      },
+      {
+        "problem_number": "custom-d8-6",
+        "structural_depth": 8,
+        "binary_operator_count": 13,
+        "expression_sha256": "980aefa218de8445ce9daa3c6a387e3c05933a02d836d0a5f044ba439570ec1b"
+      },
+      {
+        "problem_number": "custom-d8-7",
+        "structural_depth": 8,
+        "binary_operator_count": 11,
+        "expression_sha256": "047fcf6cac7b05efd6f1b1956bcd35122414c6fd60372674a691c9c34288fb42"
+      },
+      {
+        "problem_number": "custom-d8-8",
+        "structural_depth": 8,
+        "binary_operator_count": 16,
+        "expression_sha256": "1db56e1700dd0a8a0fbaad87f177fcb9dc74c450c262b089c9272a9d95b71211"
+      },
+      {
+        "problem_number": "custom-d8-9",
+        "structural_depth": 8,
+        "binary_operator_count": 12,
+        "expression_sha256": "28dadc969b934d527ac2499e8927c93ddc5b05a65d8866f3f3c583ace47f416f"
+      },
+      {
+        "problem_number": "custom-d8-10",
+        "structural_depth": 8,
+        "binary_operator_count": 14,
+        "expression_sha256": "958f668b7526d01b17c657053dfd3c84c5bc103549097d12965559128e084699"
+      }
+    ],
+    "9": [
+      {
+        "problem_number": "custom-d9-1",
+        "structural_depth": 9,
+        "binary_operator_count": 20,
+        "expression_sha256": "a61c5475786b36923d281d9c091db31251475f1a1e3c284bb3336e42a4fa1662"
+      },
+      {
+        "problem_number": "custom-d9-2",
+        "structural_depth": 9,
+        "binary_operator_count": 14,
+        "expression_sha256": "906b14f3d880e37c04622ea591f7e8069f3cdd8fbf18e583fbcc6c654245c763"
+      },
+      {
+        "problem_number": "custom-d9-3",
+        "structural_depth": 9,
+        "binary_operator_count": 13,
+        "expression_sha256": "ebe69f1928cf77810a830be752ee46cf36cb4e688f7543546c3b4c61220b4d6f"
+      },
+      {
+        "problem_number": "custom-d9-4",
+        "structural_depth": 9,
+        "binary_operator_count": 17,
+        "expression_sha256": "8938e14ea72414201f8babc7767f5a1272425c24ae758b3c0a99ba0b1d3ea450"
+      },
+      {
+        "problem_number": "custom-d9-5",
+        "structural_depth": 9,
+        "binary_operator_count": 18,
+        "expression_sha256": "05b5d74ff34d36e3b09a2fb07be35672d0496f884414d7a5c2cbda8f787c3c62"
+      },
+      {
+        "problem_number": "custom-d9-6",
+        "structural_depth": 9,
+        "binary_operator_count": 17,
+        "expression_sha256": "20af0dd0247df99335b9025616a0f38885d308f112820adb7a5def0d6e987e94"
+      },
+      {
+        "problem_number": "custom-d9-7",
+        "structural_depth": 9,
+        "binary_operator_count": 13,
+        "expression_sha256": "7ffbfcb036748a950f646086bbf684d0ec14e514cffb0db7eaeb73c02de567c9"
+      },
+      {
+        "problem_number": "custom-d9-8",
+        "structural_depth": 9,
+        "binary_operator_count": 18,
+        "expression_sha256": "ea10ab7262fbc0bd3bfa0845de43b75f115ec91b0765f618e9a52ded8b24f84f"
+      },
+      {
+        "problem_number": "custom-d9-9",
+        "structural_depth": 9,
+        "binary_operator_count": 14,
+        "expression_sha256": "095bc40ce15ac37a46044da8f73fe16f347bcd9759426f880ce35dcd1cf8b1bf"
+      },
+      {
+        "problem_number": "custom-d9-10",
+        "structural_depth": 9,
+        "binary_operator_count": 18,
+        "expression_sha256": "c6d96e49ca27c51e76df198786b93a585cfb14ff921ab1e54bc6bd2e71bcf4c7"
+      }
+    ],
+    "10": [
+      {
+        "problem_number": "custom-d10-1",
+        "structural_depth": 10,
+        "binary_operator_count": 22,
+        "expression_sha256": "bcb1d329ba66547ff602fbf4679a82930ed639aadd952c67a9a611438a9901e9"
+      },
+      {
+        "problem_number": "custom-d10-2",
+        "structural_depth": 10,
+        "binary_operator_count": 21,
+        "expression_sha256": "09f1059aa5e739d10b1ded27781ab0ddf1db1ad19fca0a4e3d85d595de24450c"
+      },
+      {
+        "problem_number": "custom-d10-3",
+        "structural_depth": 10,
+        "binary_operator_count": 16,
+        "expression_sha256": "75ed75865281672dc3f7ea85564f4458720e58b35cf5d6bed1e5528757a2521c"
+      },
+      {
+        "problem_number": "custom-d10-4",
+        "structural_depth": 10,
+        "binary_operator_count": 13,
+        "expression_sha256": "260678ecd125467ba2e92769596a332be609544641a0064c0545a1f18f3c4f83"
+      },
+      {
+        "problem_number": "custom-d10-5",
+        "structural_depth": 10,
+        "binary_operator_count": 21,
+        "expression_sha256": "713f160d3bdebc43ef7f79a3682ba7ed0b7645834cec92c33be772327ee2632d"
+      },
+      {
+        "problem_number": "custom-d10-6",
+        "structural_depth": 10,
+        "binary_operator_count": 20,
+        "expression_sha256": "93f68f55d1fec58c35b4fdb9eecbe9724c622a9d5bc07b6551de5e6a4ae4091c"
+      },
+      {
+        "problem_number": "custom-d10-7",
+        "structural_depth": 10,
+        "binary_operator_count": 19,
+        "expression_sha256": "9deee083ae33b8fb07efbe258fa4cf87a7d4c8aa3ce49a759320680d2fb59223"
+      },
+      {
+        "problem_number": "custom-d10-8",
+        "structural_depth": 10,
+        "binary_operator_count": 13,
+        "expression_sha256": "afdd7f53bc346e2feb29d797e4c19e0298d09e84e20499d029375f0e49c26e2f"
+      },
+      {
+        "problem_number": "custom-d10-9",
+        "structural_depth": 10,
+        "binary_operator_count": 21,
+        "expression_sha256": "92bb55db16e1121efff957fe19c19009558fdc96e7fcf7e70564c922b045ff40"
+      },
+      {
+        "problem_number": "custom-d10-10",
+        "structural_depth": 10,
+        "binary_operator_count": 18,
+        "expression_sha256": "93e93d7f4f3f94b3a230083d97237f64b05e7ef011955feebc5dbac7b0fd285c"
+      }
+    ],
+    "11": [
+      {
+        "problem_number": "custom-d11-1",
+        "structural_depth": 11,
+        "binary_operator_count": 23,
+        "expression_sha256": "15115480f517e6953000e9b4a64277da57c8b0aba3bf6352f6f92c938e01846d"
+      },
+      {
+        "problem_number": "custom-d11-2",
+        "structural_depth": 11,
+        "binary_operator_count": 18,
+        "expression_sha256": "f2fc20d191a27ed9959130f788f45544d0f25b1ce53de1ed3c4e6c348e91e573"
+      },
+      {
+        "problem_number": "custom-d11-3",
+        "structural_depth": 11,
+        "binary_operator_count": 22,
+        "expression_sha256": "311d02392353d5856fccf77e9056e3a5ef46b40e2a1df926560e855a7873033f"
+      },
+      {
+        "problem_number": "custom-d11-4",
+        "structural_depth": 11,
+        "binary_operator_count": 23,
+        "expression_sha256": "74ca481e268e3b53f3ddb0fd2bf71c116fd5e99cc45f124cadbfc0879cf3dc63"
+      },
+      {
+        "problem_number": "custom-d11-5",
+        "structural_depth": 11,
+        "binary_operator_count": 24,
+        "expression_sha256": "d88ca65b9e5f85312b8e433bfebb9c04d380bdf2ee73c94d7162b5bd751f8d0f"
+      },
+      {
+        "problem_number": "custom-d11-6",
+        "structural_depth": 11,
+        "binary_operator_count": 20,
+        "expression_sha256": "da6ef1c4bc8c87db4f6f986cc3871dd7b61d4e7f71d16b2a52f758222a6c203b"
+      },
+      {
+        "problem_number": "custom-d11-7",
+        "structural_depth": 11,
+        "binary_operator_count": 18,
+        "expression_sha256": "cb7049d433a9e9a497428a981ff047d91faee2ef49d2caa8106bf8d434ec7a1a"
+      },
+      {
+        "problem_number": "custom-d11-8",
+        "structural_depth": 11,
+        "binary_operator_count": 18,
+        "expression_sha256": "dd2f63eb474fc9ba93c62aafdc9211bc8dce3f556fc34a39c20184f7c5b5c4d3"
+      },
+      {
+        "problem_number": "custom-d11-9",
+        "structural_depth": 11,
+        "binary_operator_count": 22,
+        "expression_sha256": "3760019356fbb7a3032a5bae350b720086e2f474bd6a862638838af7071b4969"
+      },
+      {
+        "problem_number": "custom-d11-10",
+        "structural_depth": 11,
+        "binary_operator_count": 21,
+        "expression_sha256": "e21a28ed9544c9ce62eb400cb75648c8f6a426def753a0f04a0bbeafaa9f5fe3"
+      }
+    ]
+  },
+  "audit": "Reject operations equal to either operand on observed values. Require a longest structural path where perturbing every operation output by either +1 or -1 individually changes the final answer. This local sensitivity check is not a proof against all algebraic shortcuts.",
+  "provenance": "New diagnostic items generated with upstream arithmetic generator; not sealed benchmark items; do not include in NCRI."
+}

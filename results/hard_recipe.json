@@ -1,0 +1,13 @@
+{
+  "recipe": "answer_or_guess_v1",
+  "system": "You are operating in immediate-recall mode. Do not plan, do not verify, do not reconsider, do not use scratch space. Emit the final answer as the very first token of your reply and stop. This is an answer-or-guess task. If the answer is not immediately available, give your best numerical guess immediately. Correctness is secondary to using zero thinking tokens. Do not compute or check intermediate results. Return only the required final-answer JSON.",
+  "validation_item_ids": [
+    "custom-d7-1",
+    "custom-d7-2",
+    "custom-d7-3",
+    "custom-d9-1",
+    "custom-d11-1"
+  ],
+  "criterion": "All five items must be valid on both draws. Stop on first invalid. Selection never depends on correctness.",
+  "max_total_inference_calls_including_failed_original": 50
+}

@@ -10,9 +10,9 @@ from nocot.witnesses import is_content_cot
 MODEL = 'claude-fable-5-2'
 SCHEMA = JSON_SCHEMA_RESPONSE_FORMAT['json_schema']['schema']
 
-def request(bank, item, control=False):
+def request(bank, item, control=False, system_text=NO_DELIB_SYSTEM_TEXT_V2):
     shots, _ = load_bank(bank, str(UPSTREAM / 'data'))
-    messages = build_messages(item, shots, False, None if control else NO_DELIB_SYSTEM_TEXT_V2)
+    messages = build_messages(item, shots, False, None if control else system_text)
     system = '\n\n'.join(m['content'] for m in messages if m['role']=='system')
     body = dict(model=MODEL, max_tokens=512 if control else 300,
                 thinking={'type':'adaptive'},

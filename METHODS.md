@@ -71,3 +71,16 @@ python analyze.py
 Both draws agree. Structural depth counts the longest binary-operation dependency path, ignoring numeric signs. It is not shortcut-aware effective depth, and does not reproduce Neel's perturbation-based, cross-task calibrated 7.2-step estimate. The maximum sampled depth has only three unique items; no reliable 50% threshold can be fitted.
 
 A proposed extension starts with 30 responses, with a cap of 50 total: roughly 55k–95k input tokens and 360–600 expected output tokens if no-CoT holds. The hard output cap is 15,000 tokens. These are planning estimates; exact requests should be token-counted before spending. No extension has run.
+
+## Harder arithmetic follow-up: stopped on no-CoT failure
+
+The approved extension targeted depths 7, 9 and 11, initially 30 responses with a 50-call cap. These are new, separately labelled diagnostic items, not part of the sealed benchmark. The upstream arithmetic generator produced a frozen initial set and reserves at depths 4–11 using seed 20261111. Each item rejects locally redundant operations and has a longest structural path where independently perturbing every operation output by either +1 or -1 changes the final answer. This finite sensitivity audit does not eliminate all algebraic shortcuts or reproduce Neel's cross-task calibration. Public files contain IDs/hashes, not questions or answers.
+
+Native token counting estimated 54,166 input tokens for the planned 30 calls. Only **two inference calls actually ran**, both on the same depth-7 item:
+
+- Original recipe: **124 thinking tokens**, invalid.
+- One stronger answer-or-guess system prompt: **114 thinking tokens**, invalid; validation stopped immediately.
+
+Total additional usage: **3,680 input tokens and 264 output tokens**. No further hard items or repeats were purchased. The existing positive control had already demonstrated a responsive counter. We did not fit a sigmoid or estimate a 50% threshold from these failed protocol probes. A failed no-CoT check does not establish inability to solve the arithmetic task without thinking under another elicitation method.
+
+`python hard_arithmetic.py prepare` regenerates the private diagnostic items. `python hard_arithmetic.py summary` reproduces the report. Both inference runners stop on the first invalid response and refuse to resume after a recorded invalid response. `replicate.request` accepts an optional system text for the separately recorded repair; the original recipe remains the default. [Manifest](results/hard_manifest.json), [original attempt](results/hard_rows.jsonl), [repair recipe](results/hard_recipe.json), [repair attempt](results/hard_recipe_validation.jsonl), [summary](results/hard_summary.json).

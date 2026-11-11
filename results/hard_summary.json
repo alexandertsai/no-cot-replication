@@ -1,0 +1,50 @@
+{
+  "model": "claude-fable-5-2",
+  "calls": 2,
+  "invalid": 2,
+  "reasoning_tokens": 238,
+  "usage": {
+    "input_tokens": 3680,
+    "output_tokens": 264
+  },
+  "scope": "New sensitivity-filtered arithmetic diagnostics, separate from the sealed benchmark and Neel's cross-task normalized depth estimate.",
+  "initial_recipe_table": {
+    "7": {
+      "n_items": 1,
+      "responses": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "draws": {
+        "1": {
+          "n": 1,
+          "correct": 0
+        },
+        "2": {
+          "n": 0,
+          "correct": 0
+        }
+      }
+    }
+  },
+  "attempts": [
+    {
+      "recipe": "original",
+      "problem_number": "custom-d7-1",
+      "structural_depth": 7,
+      "reasoning_tokens": 124,
+      "valid": false,
+      "answer_correct_after_reasoning": true
+    },
+    {
+      "recipe": "answer_or_guess_v1",
+      "problem_number": "custom-d7-1",
+      "structural_depth": 7,
+      "reasoning_tokens": 114,
+      "valid": false,
+      "answer_correct_after_reasoning": true
+    }
+  ],
+  "status": "halted_no_cot_validation_failed",
+  "threshold_estimate": null,
+  "conclusion": "Two recipes failed the no-CoT check on the first depth-7 item. No accuracy curve or 50% depth threshold was measured. This is a protocol limitation, not a measured reasoning-capacity limit."
+}
