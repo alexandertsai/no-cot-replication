@@ -8,7 +8,7 @@ from nocot.run import build_messages,NO_DELIB_SYSTEM_TEXT_V2
 from nocot.filler import STRONG_NDELIB_TEXT
 from nocot.witnesses import is_content_cot
 CAP=4.0
-LEDGER=OUT/'continuation_ledger.jsonl'
+LEDGER=PRIV/'continuation_ledger.jsonl'
 ROWS=OUT/'continuation_rows.jsonl'
 # Screening and validation items are separate from the future measured 1..5 items.
 SCREEN=['custom-d7-6','custom-d9-6','custom-d11-6']
@@ -33,7 +33,7 @@ def billed(usage):
 
 def budget_upper():
  settled={r['id']:r for r in readjsonl(ROWS)}
- return sum(2*settled[x['id']]['estimated_standard_usd'] if x['id'] in settled else x['reserved_usd'] for x in readjsonl(LEDGER))
+ return 2*sum(r['estimated_standard_usd'] for r in settled.values())+sum(x['reserved_usd'] for x in readjsonl(LEDGER) if x['id'] not in settled)
 
 def headers():return {'x-api-key':os.environ['ANTHROPIC_API_KEY'],'anthropic-version':'2023-06-01','content-type':'application/json'}
 def post(path,body):
