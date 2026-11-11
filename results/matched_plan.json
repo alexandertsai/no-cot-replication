@@ -1,0 +1,61 @@
+{
+  "cap_usd": 4,
+  "scope": "This matched-original-item run only.",
+  "recipes_in_order": [
+    {
+      "name": "v2_schema",
+      "system": "v2",
+      "schema": true,
+      "shots": "canonical"
+    },
+    {
+      "name": "strong_plain",
+      "system": "strong",
+      "schema": false,
+      "shots": "canonical"
+    },
+    {
+      "name": "strong_schema",
+      "system": "strong",
+      "schema": true,
+      "shots": "canonical"
+    },
+    {
+      "name": "strong_plain_hard3",
+      "system": "strong",
+      "schema": false,
+      "shots": "hard3"
+    },
+    {
+      "name": "strong_schema_hard3",
+      "system": "strong",
+      "schema": true,
+      "shots": "hard3"
+    },
+    {
+      "name": "strong_plain_one",
+      "system": "strong",
+      "schema": false,
+      "shots": "one"
+    },
+    {
+      "name": "strong_schema_zero",
+      "system": "strong",
+      "schema": true,
+      "shots": "zero"
+    },
+    {
+      "name": "strong_plain_zero",
+      "system": "strong",
+      "schema": false,
+      "shots": "zero"
+    }
+  ],
+  "selection": "Per family, first recipe clean on one low/mid/hard screen and then five disjoint-from-main probe items on two draws. Screen responses are reused as the corresponding validation draw, not repurchased. Never select by accuracy.",
+  "main": "Exactly 15 frozen original items per family, two Fable draws each. A family without validated no-CoT recipe is unmeasured, not silently omitted or scored zero.",
+  "positive_control": "One maximum-effort probe per measured family must have a present, nonzero thinking-token counter.",
+  "pricing_source": "https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2",
+  "budget": "Completed usage retained at 1.2 times standard cost, outstanding requests at full reservation. Reserve next request with 25%+256 extra input tokens and full max output, all at 1.2x standard rates. Require total <=$4 before transmitting. No automatic retries.",
+  "ledger": "Local private/matched_ledger.jsonl; never publish.",
+  "comparison": "Regrade both models using same upstream answer grader and normalize JSON answers consistently. Nontruncated reasoning is wrong; truncation/blind is missing. Report matched nonmissing pairs and separate missingness/invalidity."
+}

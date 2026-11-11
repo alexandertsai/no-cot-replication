@@ -1,35 +1,25 @@
-# No-CoT replication: Fable 5.2 vs Astra
+# No-CoT comparison: Fable 5.2 vs Astra
 
-Fable 5.2 scored **94%**, versus Astra’s **98%**, on the same 50 problems without chain of thought.
+Using released problems from **Neel Nanda’s [no-CoT evaluation](https://www.lesswrong.com/posts/eRmzz8J8Qkzqvzrgg/astra-can-do-a-concerning-amount-with-no-chain-of-thought)** and his [nocot-bench](https://github.com/neelnanda-io/nocot-bench) data and grader.
 
-| Task | Fable 5.2 | Astra |
-|---|---:|---:|
-| Arithmetic | 23/25 (92%) | 24/25 (96%) |
-| Repeated lookup | 9/10 (90%) | 10/10 (100%) |
-| Shortest paths | 15/15 (100%) | 15/15 (100%) |
-| **Total** | **47/50 (94%)** | **49/50 (98%)** |
+## Matched original problems
 
-Both models repeated the same outcomes on their second draws. All compared responses passed their respective no-CoT checks. Astra’s responses come from the published benchmark; we ran only Fable 5.2.
+60 problems: 15 per task, with five low-, five medium-, and five higher-difficulty items. Fable was tested twice; Astra’s scores come from one published response per identical problem.
 
-**Usage:** 105 inference calls, 155,789 input tokens and 1,523 output tokens, including controls.
+| Task | Fable draw 1 | Fable draw 2 | Astra |
+|---|---:|---:|---:|
+| Arithmetic | 10/15 | 10/15 | 11/15 |
+| Repeated lookup | 10/15 | 9/15 | 10/15 |
+| State machine | 8/15 | 7/15 | 11/15 |
+| Configuration patches | 9/15 | 9/15 | 12/15 |
+| **Total** | **37/60 (61.7%)** | **35/60 (58.3%)** | **44/60 (73.3%)** |
 
-This small subset uses different serving/prompt formats and does not establish an overall model ranking.
+Eight of Fable’s 120 replies used thinking tokens and count as wrong. Two hard source-bank cells exceeded the invalid-response threshold. On the remaining 50 items, Fable scored **70% / 68%**, versus Astra’s **86%**. No evaluation responses were missing or truncated.
 
-## Harder arithmetic follow-up
+**Cost: approximately $3.53**, including prompt search and controls, below the $4 cap. No new Astra calls. This is an exploratory matched-item comparison with model-specific prompts, not an overall ranking or a reproduction of the normalized 7.2-step result.
 
-A stronger prompt plus ten harder demonstrations suppressed thinking more reliably.
+[Results](results/matched_summary.json) · [Paired comparison and validity gates](results/matched_comparison.json) · [Methods and reproduction](METHODS.md)
 
-| Dependent depth | No-CoT score |
-|---|---:|
-| 4 | 10/10 (100%) |
-| 5 | 6/10 (60%) |
-| 6 | 3/10 (30%) |
-| 7 | 4/9 (44%); one truncated response |
+## Earlier small runs
 
-Five unique problems per depth, tested twice. Depths 9 and 11 had too many truncated or reasoned responses for reliable depth estimates. A descriptive 50% fit is around **6 steps**, with very wide uncertainty. This is **not directly comparable to Neel’s normalized 7.2-step estimate**.
-
-**Continuation cost: approximately $1.62 of the $4 cap** ($2.97 across all Fable inference so far), estimated from published standard rates. [Detailed results](results/continuation_summary.json) · [Fit and uncertainty](results/continuation_depth_fit.json)
-
-Inspired by **Neel Nanda’s [article](https://www.lesswrong.com/posts/eRmzz8J8Qkzqvzrgg/astra-can-do-a-concerning-amount-with-no-chain-of-thought)**, using his [nocot-bench](https://github.com/neelnanda-io/nocot-bench) data and grader.
-
-[Results](results/summary.json) · [Astra comparison](results/astra_comparison.json) · [Methods and reproduction](METHODS.md)
+The initial easier 50-problem subset scored 94% for Fable versus 98% for Astra. A separate custom arithmetic diagnostic suggested a highly uncertain ~6-step threshold; its units are not directly comparable to Neel’s 7.2. [Earlier results](results/summary.json) · [Depth diagnostic](results/continuation_depth_fit.json)

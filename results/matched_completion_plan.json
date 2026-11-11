@@ -1,0 +1,22 @@
+{
+  "declared_before_remaining_main_calls": true,
+  "inference_calls_before_completion": 169,
+  "estimated_standard_usd_before_completion": 2.894488,
+  "cap_usd": 4,
+  "scope": "Complete the original frozen brew/cfgpatch evaluation items using the best validity-only recipe found; this is a post-declared exploratory completion, not a claim that strict zero-invalid validation passed.",
+  "recipe": "strong_schema_zero",
+  "validation": {
+    "brew": {
+      "valid": 9,
+      "n": 10
+    },
+    "cfgpatch": {
+      "valid": 8,
+      "n": 10
+    }
+  },
+  "selection": "Based on no-CoT validity only, not correctness. No selected main items or answer keys changed.",
+  "failures": "Nontruncated reasoning remains wrong. Truncations/blind counters are missing. Source-bank cells over 20% invalid or over 20% missing are excluded from qualified-cell comparison and explicitly reported.",
+  "budget_revision": "Settled observed usage uses a 10% price margin instead of 20%; outstanding/new-request maxima retain the original 20% rate margin, 25%+256 input-token allowance and full output cap. No fast mode/cache is requested. The dollar cap remains $4.",
+  "validation_caveat": "The hard-bank validation subsets have higher failure fractions than pooled task validation; never describe these hard cells as fully validated."
+}

@@ -1,0 +1,647 @@
+{
+  "scope": "60 original items, four serial families, one fixed published Astra response/item, two new Fable draws where no-CoT validates. Not a normalized depth estimate or overall NCRI.",
+  "cap_usd": 4.0,
+  "estimated_standard_usd": 3.532296,
+  "conservative_committed_usd": 3.8855256000000002,
+  "inference_calls": 231,
+  "responses_received": 231,
+  "usage": {
+    "input_tokens": 408542,
+    "output_tokens": 6599
+  },
+  "tasks": {
+    "arithmetic": {
+      "astra": {
+        "responses": 15,
+        "scorable": 15,
+        "correct": 11,
+        "accuracy": 0.7333333333333333,
+        "invalid": 0,
+        "missing": 0,
+        "cell_unmeasured_over20pct_invalid": false,
+        "incomplete_over20pct_missing": false
+      },
+      "fable_draws": {
+        "1": {
+          "fable": {
+            "responses": 15,
+            "scorable": 15,
+            "correct": 10,
+            "accuracy": 0.6666666666666666,
+            "invalid": 2,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "paired": {
+            "n": 15,
+            "fable_correct": 10,
+            "astra_correct": 11,
+            "fable_only": 1,
+            "astra_only": 2
+          }
+        },
+        "2": {
+          "fable": {
+            "responses": 15,
+            "scorable": 15,
+            "correct": 10,
+            "accuracy": 0.6666666666666666,
+            "invalid": 1,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "paired": {
+            "n": 15,
+            "fable_correct": 10,
+            "astra_correct": 11,
+            "fable_only": 1,
+            "astra_only": 2
+          }
+        }
+      },
+      "strata": {
+        "low": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 5,
+            "accuracy": 1.0,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 5,
+              "accuracy": 1.0,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 5,
+              "accuracy": 1.0,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        },
+        "mid": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 5,
+            "accuracy": 1.0,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 4,
+              "accuracy": 0.8,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 4,
+              "accuracy": 0.8,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        },
+        "hard": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 1,
+            "accuracy": 0.2,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 1,
+              "accuracy": 0.2,
+              "invalid": 2,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": true,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 1,
+              "accuracy": 0.2,
+              "invalid": 1,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        }
+      }
+    },
+    "brew": {
+      "astra": {
+        "responses": 15,
+        "scorable": 15,
+        "correct": 10,
+        "accuracy": 0.6666666666666666,
+        "invalid": 0,
+        "missing": 0,
+        "cell_unmeasured_over20pct_invalid": false,
+        "incomplete_over20pct_missing": false
+      },
+      "fable_draws": {
+        "1": {
+          "fable": {
+            "responses": 15,
+            "scorable": 15,
+            "correct": 10,
+            "accuracy": 0.6666666666666666,
+            "invalid": 2,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "paired": {
+            "n": 15,
+            "fable_correct": 10,
+            "astra_correct": 10,
+            "fable_only": 1,
+            "astra_only": 1
+          }
+        },
+        "2": {
+          "fable": {
+            "responses": 15,
+            "scorable": 15,
+            "correct": 9,
+            "accuracy": 0.6,
+            "invalid": 1,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "paired": {
+            "n": 15,
+            "fable_correct": 9,
+            "astra_correct": 10,
+            "fable_only": 0,
+            "astra_only": 1
+          }
+        }
+      },
+      "strata": {
+        "low": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 5,
+            "accuracy": 1.0,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 5,
+              "accuracy": 1.0,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 5,
+              "accuracy": 1.0,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        },
+        "mid": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 5,
+            "accuracy": 1.0,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 4,
+              "accuracy": 0.8,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 4,
+              "accuracy": 0.8,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        },
+        "hard": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 0,
+            "accuracy": 0.0,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 1,
+              "accuracy": 0.2,
+              "invalid": 2,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": true,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 0,
+              "accuracy": 0.0,
+              "invalid": 1,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        }
+      }
+    },
+    "chain": {
+      "astra": {
+        "responses": 15,
+        "scorable": 15,
+        "correct": 11,
+        "accuracy": 0.7333333333333333,
+        "invalid": 0,
+        "missing": 0,
+        "cell_unmeasured_over20pct_invalid": false,
+        "incomplete_over20pct_missing": false
+      },
+      "fable_draws": {
+        "1": {
+          "fable": {
+            "responses": 15,
+            "scorable": 15,
+            "correct": 8,
+            "accuracy": 0.5333333333333333,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "paired": {
+            "n": 15,
+            "fable_correct": 8,
+            "astra_correct": 11,
+            "fable_only": 1,
+            "astra_only": 4
+          }
+        },
+        "2": {
+          "fable": {
+            "responses": 15,
+            "scorable": 15,
+            "correct": 7,
+            "accuracy": 0.4666666666666667,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "paired": {
+            "n": 15,
+            "fable_correct": 7,
+            "astra_correct": 11,
+            "fable_only": 0,
+            "astra_only": 4
+          }
+        }
+      },
+      "strata": {
+        "low": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 5,
+            "accuracy": 1.0,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 4,
+              "accuracy": 0.8,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 4,
+              "accuracy": 0.8,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        },
+        "mid": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 5,
+            "accuracy": 1.0,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 2,
+              "accuracy": 0.4,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 3,
+              "accuracy": 0.6,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        },
+        "hard": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 1,
+            "accuracy": 0.2,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 2,
+              "accuracy": 0.4,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 0,
+              "accuracy": 0.0,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        }
+      }
+    },
+    "cfgpatch": {
+      "astra": {
+        "responses": 15,
+        "scorable": 15,
+        "correct": 12,
+        "accuracy": 0.8,
+        "invalid": 0,
+        "missing": 0,
+        "cell_unmeasured_over20pct_invalid": false,
+        "incomplete_over20pct_missing": false
+      },
+      "fable_draws": {
+        "1": {
+          "fable": {
+            "responses": 15,
+            "scorable": 15,
+            "correct": 9,
+            "accuracy": 0.6,
+            "invalid": 1,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "paired": {
+            "n": 15,
+            "fable_correct": 9,
+            "astra_correct": 12,
+            "fable_only": 0,
+            "astra_only": 3
+          }
+        },
+        "2": {
+          "fable": {
+            "responses": 15,
+            "scorable": 15,
+            "correct": 9,
+            "accuracy": 0.6,
+            "invalid": 1,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "paired": {
+            "n": 15,
+            "fable_correct": 9,
+            "astra_correct": 12,
+            "fable_only": 0,
+            "astra_only": 3
+          }
+        }
+      },
+      "strata": {
+        "low": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 5,
+            "accuracy": 1.0,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 5,
+              "accuracy": 1.0,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 5,
+              "accuracy": 1.0,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        },
+        "mid": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 5,
+            "accuracy": 1.0,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 4,
+              "accuracy": 0.8,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 4,
+              "accuracy": 0.8,
+              "invalid": 0,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        },
+        "hard": {
+          "astra": {
+            "responses": 5,
+            "scorable": 5,
+            "correct": 2,
+            "accuracy": 0.4,
+            "invalid": 0,
+            "missing": 0,
+            "cell_unmeasured_over20pct_invalid": false,
+            "incomplete_over20pct_missing": false
+          },
+          "fable": {
+            "1": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 0,
+              "accuracy": 0.0,
+              "invalid": 1,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            },
+            "2": {
+              "responses": 5,
+              "scorable": 5,
+              "correct": 0,
+              "accuracy": 0.0,
+              "invalid": 1,
+              "missing": 0,
+              "cell_unmeasured_over20pct_invalid": false,
+              "incomplete_over20pct_missing": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "notes": [
+    "Both models regraded using the same shared grader; published Astra verdicts retained for audit.",
+    "Truncated and blind responses are missing, never silently counted as correct or as zero reasoning.",
+    "Paired comparisons exclude a pair only for missingness; nontruncated reasoned responses remain wrong.",
+    "Primary comparison uses Fable draw1, with draw2 a serving repeat, not new independent items.",
+    "Within-family >20% invalid among scorable responses is flagged unmeasured; do not claim a capability ranking from an invalid cell.",
+    "Difficulty labels are task-specific, not comparable arithmetic-step units.",
+    "No new Astra inference or public spending ledger."
+  ]
+}

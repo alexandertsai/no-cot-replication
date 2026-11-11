@@ -1,0 +1,849 @@
+{
+  "seed": 20261112,
+  "upstream_commit": "beb2ffcf73b657a445e8a7b797d7c9b0e249b570",
+  "selection": "15 per family: five low, five mid, five hard, round-robin across nominal difficulty levels with seeded random item order. Selection never uses Astra outcomes. Previous Fable main items excluded.",
+  "main": [
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 118,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "arithmetic:ops1-2",
+      "problem_sha256": "2b3185ce3812e7dcf5d221f25a26db6d5339ea1e039e71bb662936dedfe8586b"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 108,
+      "stratum": "low",
+      "nominal_difficulty": 3,
+      "rung": "arithmetic:ops3-4",
+      "problem_sha256": "fb2a674ef680ad994f5681f6ff184a4ddd2f1e7def22c261e89e1fe70ec36286"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 67,
+      "stratum": "low",
+      "nominal_difficulty": 4,
+      "rung": "arithmetic:ops3-4",
+      "problem_sha256": "c76dd2818803675cae61668a56156fcba54c6678c71a96d05ba6ad2aba04a422"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 87,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "arithmetic:ops1-2",
+      "problem_sha256": "513e60bc77e5e06073cbdf94c690c362fb4f29a8cff9c198521a51a7dd207958"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 56,
+      "stratum": "low",
+      "nominal_difficulty": 3,
+      "rung": "arithmetic:ops3-4",
+      "problem_sha256": "73ea808fffe2f865eadb2ac3c952bc07bc0648cc4479cfe8a6d3dc7c34e899e1"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 39,
+      "stratum": "mid",
+      "nominal_difficulty": 6,
+      "rung": "arithmetic:ops5-6",
+      "problem_sha256": "609554bc76fbba6909390ae15922b3c7036c207a7c8b233f70f1de5781ae7f5d"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 139,
+      "stratum": "mid",
+      "nominal_difficulty": 7,
+      "rung": "arithmetic:ops7",
+      "problem_sha256": "186caaf283e9f0816e826638b23dc20264daab410269a4266a99bca7e34cc3e7"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 14,
+      "stratum": "mid",
+      "nominal_difficulty": 8,
+      "rung": "arithmetic:ops8-12",
+      "problem_sha256": "b3ff17f9d1aa864358342d91117c8ab63dcebd86d1856dcf9cbfd71e20584b4c"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 24,
+      "stratum": "mid",
+      "nominal_difficulty": 10,
+      "rung": "arithmetic:ops8-12",
+      "problem_sha256": "9ac2beac092cb4fd221af213c0134e6e31f20809d3bc9b20292abe98501dd869"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 54,
+      "stratum": "mid",
+      "nominal_difficulty": 12,
+      "rung": "arithmetic:ops8-12",
+      "problem_sha256": "115f22eaac77c9a7c42dddcd1aea888e2bada1403b2dfef194df11c901203274"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900112,
+      "stratum": "hard",
+      "nominal_difficulty": 16,
+      "rung": null,
+      "problem_sha256": "60a999cfd56c48106b3b283e0b6343c2b9d0c129bd745101748ff8bbe56ea9c0"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900128,
+      "stratum": "hard",
+      "nominal_difficulty": 20,
+      "rung": null,
+      "problem_sha256": "f2c79c946fc8702708ea13b718260e5bc30a4482ccddfe1ce0db642d55e61b2c"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900148,
+      "stratum": "hard",
+      "nominal_difficulty": 26,
+      "rung": null,
+      "problem_sha256": "592f4a02a4f49a2ff33a3b6d287ac9bac3feab0a1f6d13f05dd16e5b48952f36"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900109,
+      "stratum": "hard",
+      "nominal_difficulty": 16,
+      "rung": null,
+      "problem_sha256": "c655931d841b3d7c2348b8e5d545bae4248be233807d43534ad3bd4f3f79231f"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900127,
+      "stratum": "hard",
+      "nominal_difficulty": 20,
+      "rung": null,
+      "problem_sha256": "ac6a62e4b7b5b9acf47f0da3335e7ad34fb30a731134dcf2dd2d3cf3e8680233"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 54,
+      "stratum": "low",
+      "nominal_difficulty": 1,
+      "rung": "brew:lo",
+      "problem_sha256": "b7ebf37e8bcc610b84c3df17e851ac33adc2b2dcb7d973b2d17f16884e9ac4f4"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 59,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "brew:lo",
+      "problem_sha256": "fcc60f2b2377090b6ac0012e73cb774248532d7ac6b71e4d296583a4dfdf31fe"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 52,
+      "stratum": "low",
+      "nominal_difficulty": 1,
+      "rung": "brew:lo",
+      "problem_sha256": "06b3e87c5f81c4856ce01aadcfc9bcc023c8461389c7b711f2e5c5a2105b2ef1"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 58,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "brew:lo",
+      "problem_sha256": "68ad5f06be1684011130b8247725ec529b79c173f03f3d68bdd0b8077bf4881b"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 55,
+      "stratum": "low",
+      "nominal_difficulty": 1,
+      "rung": "brew:lo",
+      "problem_sha256": "a3010bf3c00785fc8aaa4afe7ed6dacd1839d53b61ed981eaa64df2c566deaff"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 67,
+      "stratum": "mid",
+      "nominal_difficulty": 3,
+      "rung": "brew:lo",
+      "problem_sha256": "ab9a4557eeb9b90e8245d4e67d2fce9e46a676f2ce77170231cffd2df8cc39f8"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 71,
+      "stratum": "mid",
+      "nominal_difficulty": 4,
+      "rung": "brew:mid",
+      "problem_sha256": "bcd6821a8f6c60f9409e139eb145372a330289c16ddbcc5b4aa5c778bce2daf2"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 28,
+      "stratum": "mid",
+      "nominal_difficulty": 5,
+      "rung": "brew:mid",
+      "problem_sha256": "7d9925e7cc53fffcdfdd405d2cbf03f1b7ee925ad5628797a7e46c2dfe9034ae"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 17,
+      "stratum": "mid",
+      "nominal_difficulty": 3,
+      "rung": "brew:lo",
+      "problem_sha256": "38e894a82371944014ea32c2f4edbd5a3c108676f8a89a9fdb9aeec3a6ff6f32"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 72,
+      "stratum": "mid",
+      "nominal_difficulty": 4,
+      "rung": "brew:mid",
+      "problem_sha256": "e2f561823b472a453ba5dec95d34b798a6871ffa122928fa6e4e5a7fcb89af83"
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960144,
+      "stratum": "hard",
+      "nominal_difficulty": 7,
+      "rung": 3,
+      "problem_sha256": "e67ca61f2ac0a147f8a817cbfcd6f81437d1af9ac96666ebf734d1f9cdf5c456"
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960157,
+      "stratum": "hard",
+      "nominal_difficulty": 7,
+      "rung": 3,
+      "problem_sha256": "6f21faa31f7d85214f882e9ed7d90b002f81ff4ea6a713de8364bfaf3ad1901e"
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960159,
+      "stratum": "hard",
+      "nominal_difficulty": 7,
+      "rung": 3,
+      "problem_sha256": "af7cd7d3e148917ea259d77c8c82d3ead258252726ba325261afd3da1c46ea80"
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960145,
+      "stratum": "hard",
+      "nominal_difficulty": 7,
+      "rung": 3,
+      "problem_sha256": "7db304a0679648aa9e4ea36803e0810e2d053c2970cda253bd2d992d276a7242"
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960155,
+      "stratum": "hard",
+      "nominal_difficulty": 7,
+      "rung": 3,
+      "problem_sha256": "eb4ebcbcf09378b0798aa4a5418d898a16458eabb7ed63f3d155c9609df0a2f7"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 16,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "chain:lo",
+      "problem_sha256": "1924fe9a8a5919df45f9eaeb7838ec48573c44800fe8b6060ccf91434bbb0f9a"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 21,
+      "stratum": "low",
+      "nominal_difficulty": 3,
+      "rung": "chain:lo",
+      "problem_sha256": "11bbc54300d410123f2a67d45c51f0b2e768a304bdcb7f806f033606a2b65ff0"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 12,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "chain:lo",
+      "problem_sha256": "9c8b525e00f545dd6bbd7a7d99125faa78341c675a1841b75cbf89b3b2d54a0d"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 22,
+      "stratum": "low",
+      "nominal_difficulty": 3,
+      "rung": "chain:lo",
+      "problem_sha256": "ac9f0f49e233d34625adbe74dfd3ed49f5d7d9e735957d8eb9666fff2fdeb559"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 15,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "chain:lo",
+      "problem_sha256": "c05c0faad9ae0bc3f472dc3fb7902d9aef24673017d9e9e78b699365d6a3d10b"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 35,
+      "stratum": "mid",
+      "nominal_difficulty": 5,
+      "rung": "chain:mid",
+      "problem_sha256": "e0edaeca9cc55eed6295672540184cc44036c8f95cb95bcc4bbfa7e350920fe6"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 39,
+      "stratum": "mid",
+      "nominal_difficulty": 6,
+      "rung": "chain:hi",
+      "problem_sha256": "7a21b9edae904a129c4c3807b58ac00815888d3a532219d5b0868989fd80f78a"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 45,
+      "stratum": "mid",
+      "nominal_difficulty": 8,
+      "rung": "chain:hi",
+      "problem_sha256": "679a87c3e89afb8565613140a7d1f273346c559f59fc734d84a6d89e1a646e12"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 32,
+      "stratum": "mid",
+      "nominal_difficulty": 5,
+      "rung": "chain:mid",
+      "problem_sha256": "807083b1dfa98643f1d5f68af14e822bf45a5a265d73d3e0aa1ee970cec9bcdb"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 38,
+      "stratum": "mid",
+      "nominal_difficulty": 6,
+      "rung": "chain:hi",
+      "problem_sha256": "ae0432827b5ab0b66fe50bdf467db2ec858d341628702be546f198247552578f"
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900114,
+      "stratum": "hard",
+      "nominal_difficulty": 10,
+      "rung": 7,
+      "problem_sha256": "5adf3c5aedd597bf8efeb542af637caa10ec21c1b0503690f4702eb2a638d7a4"
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900132,
+      "stratum": "hard",
+      "nominal_difficulty": 12,
+      "rung": 8,
+      "problem_sha256": "21503b56003d30abc3da2eee050d5e2e264bb45d81b1c9461cb31dd78d572259"
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900154,
+      "stratum": "hard",
+      "nominal_difficulty": 14,
+      "rung": 9,
+      "problem_sha256": "d17d2587cdec3c07bf3ae09f62ce0439e5366deba44368bd079a806af6297e94"
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900113,
+      "stratum": "hard",
+      "nominal_difficulty": 10,
+      "rung": 7,
+      "problem_sha256": "1e914b2c758b20abb8ae9d72cb4e7bd77250132b96d984818247143c34b17510"
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900129,
+      "stratum": "hard",
+      "nominal_difficulty": 12,
+      "rung": 8,
+      "problem_sha256": "603765e05e921c17df269a44253fac6944e7ebb63ccfbbf3f003de31e75c6650"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 105,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "cfgpatch:lo",
+      "problem_sha256": "7c72b0b2436b69313899957021679bfe6bcee304467d8583aa5f826317f3d05b"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 109,
+      "stratum": "low",
+      "nominal_difficulty": 3,
+      "rung": "cfgpatch:lo",
+      "problem_sha256": "58f14f94d825b3202a70f579a0db4483319f55dad4f4a774a6f127e0b901266a"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 13,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "cfgpatch:lo",
+      "problem_sha256": "0235bf2241ba8c5f1d913479faf8b8713a3c54adee62be91750bddd59d430d5c"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 16,
+      "stratum": "low",
+      "nominal_difficulty": 3,
+      "rung": "cfgpatch:lo",
+      "problem_sha256": "a5362da1caeb7afee9aefc04d521345bdc996208d7e9a7531d2411b5e492cd72"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 15,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "cfgpatch:lo",
+      "problem_sha256": "27f496df17efcec6d3c8145378626af46ab3a744f29743e37610026cbbf9eae9"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 125,
+      "stratum": "mid",
+      "nominal_difficulty": 5,
+      "rung": "cfgpatch:mid",
+      "problem_sha256": "d3599627253953606f6aeb2451f4c5b905d69f105a26ab70f81006f8e1cd6632"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 137,
+      "stratum": "mid",
+      "nominal_difficulty": 6,
+      "rung": "cfgpatch:mid",
+      "problem_sha256": "ae4471ff722919b8125ab55d5853ee44a5171899599538693de29454a7f96f95"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 130,
+      "stratum": "mid",
+      "nominal_difficulty": 5,
+      "rung": "cfgpatch:mid",
+      "problem_sha256": "0a708138ab486c01c5b4c65c328a102de33256f986841c723b79d80debf62059"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 139,
+      "stratum": "mid",
+      "nominal_difficulty": 6,
+      "rung": "cfgpatch:mid",
+      "problem_sha256": "c0aafa77c722f7d6b246d1057633fbebb4f562ccb1088fd8090320642946c75a"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 128,
+      "stratum": "mid",
+      "nominal_difficulty": 5,
+      "rung": "cfgpatch:mid",
+      "problem_sha256": "80a3816762ef14207c3464e5043b18673e8669d502918da433bb41f7358137d7"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900100,
+      "stratum": "hard",
+      "nominal_difficulty": 16,
+      "rung": 8,
+      "problem_sha256": "335152bcece630a485ea4027172656ae76c418f7d24cd3e0a9b1d5c14ae181e2"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900129,
+      "stratum": "hard",
+      "nominal_difficulty": 20,
+      "rung": 9,
+      "problem_sha256": "3f906e997120fe20e2d165cf2913534e57a242fbbe08dccd22d89c76c3cde0fd"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900143,
+      "stratum": "hard",
+      "nominal_difficulty": 24,
+      "rung": 10,
+      "problem_sha256": "2f2a1c39262c2524afe00f509378c2bc37a9d78f7348f439e066fea9184b89c6"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900110,
+      "stratum": "hard",
+      "nominal_difficulty": 16,
+      "rung": 8,
+      "problem_sha256": "2c49bedde673740f4ebb1cb36309189f0d651fc6ad6562ac4198d8c41e6aeb60"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900136,
+      "stratum": "hard",
+      "nominal_difficulty": 20,
+      "rung": 9,
+      "problem_sha256": "8766a9a04018b9c1c6bbb1e6cfd6c4d4c6dfe5944d9c404c5b9c384170eddd0c"
+    }
+  ],
+  "probes": [
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 102,
+      "stratum": "low",
+      "nominal_difficulty": 4,
+      "rung": "arithmetic:ops3-4",
+      "problem_sha256": "d9188d56cfc613b0a5b279b9414a3851b879b1a2d94c2d363c0532bd1057f52a"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 61,
+      "stratum": "mid",
+      "nominal_difficulty": 6,
+      "rung": "arithmetic:ops5-6",
+      "problem_sha256": "66737e1a256bcfa616237c308e5b0f04cf55fdc92d92910b25d13b039f076592"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 148,
+      "stratum": "mid",
+      "nominal_difficulty": 7,
+      "rung": "arithmetic:ops7",
+      "problem_sha256": "1f661233faf1bcb66f7f855a6a78d876b7307bd298d1fc0082b9d9ffb2f3e2d6"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900143,
+      "stratum": "hard",
+      "nominal_difficulty": 26,
+      "rung": null,
+      "problem_sha256": "40a960a48129616e0dcc751ed819999b32f083da269b30c4f7efb63ae1cc9c03"
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900101,
+      "stratum": "hard",
+      "nominal_difficulty": 16,
+      "rung": null,
+      "problem_sha256": "91abb2c380a789d5152c7ad15b97fc938b7cb34999ad00dadda72b296968aad4"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 13,
+      "stratum": "low",
+      "nominal_difficulty": 2,
+      "rung": "brew:lo",
+      "problem_sha256": "22b2d29226cac2284ee0a39eb872b4405135a31a9ea31c4c030496108be70ff6"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 30,
+      "stratum": "mid",
+      "nominal_difficulty": 5,
+      "rung": "brew:mid",
+      "problem_sha256": "135f2692c7a04476475b84be7d40587fc5f019c8d3cf66d9d57770b65de64293"
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 63,
+      "stratum": "mid",
+      "nominal_difficulty": 3,
+      "rung": "brew:lo",
+      "problem_sha256": "374977811bb7ce7c3ace1b19193676f55552d12b5796799e661a0006ec987d3e"
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960154,
+      "stratum": "hard",
+      "nominal_difficulty": 7,
+      "rung": 3,
+      "problem_sha256": "138b822348010c3aea1b2cc11b84a9c6f82d5b6558dbfa12a9365f98d8cf3ab6"
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960140,
+      "stratum": "hard",
+      "nominal_difficulty": 7,
+      "rung": 3,
+      "problem_sha256": "785d63e47a075101b1bdf88473e09b7a44a0232a6167cc90fa53a116956dc1f6"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 17,
+      "stratum": "low",
+      "nominal_difficulty": 3,
+      "rung": "chain:lo",
+      "problem_sha256": "0457a1b2d761b087a0b920cba5af69715e9e2d8a555012c689b1c196f969c8f1"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 46,
+      "stratum": "mid",
+      "nominal_difficulty": 8,
+      "rung": "chain:hi",
+      "problem_sha256": "aa2c5aa95472daffd44a2c2539dd5e8eb2f099982538488cd514d525f0523581"
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 33,
+      "stratum": "mid",
+      "nominal_difficulty": 5,
+      "rung": "chain:mid",
+      "problem_sha256": "1a60c4c89442461b21da008bae82211eda5d49c46b8faa49e033113c1d755e32"
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900140,
+      "stratum": "hard",
+      "nominal_difficulty": 14,
+      "rung": 9,
+      "problem_sha256": "9b9cb0b389389d2b2f46befd0cc6ece347ddb70542c5b167d9a99748d549ae66"
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900105,
+      "stratum": "hard",
+      "nominal_difficulty": 10,
+      "rung": 7,
+      "problem_sha256": "6b70d00dc468a1b4b74fc9961e1858e1e46b94ea0b86baecc8c30ea59efe9aad"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 20,
+      "stratum": "low",
+      "nominal_difficulty": 3,
+      "rung": "cfgpatch:lo",
+      "problem_sha256": "332e7a0cea99c370b86e42369bb6a426bcc0bb9787c14d5c0ca06f4c29b4fa93"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 31,
+      "stratum": "mid",
+      "nominal_difficulty": 6,
+      "rung": "cfgpatch:mid",
+      "problem_sha256": "1c7524dacd53be4b4fdcf88d6c4b4ad28211f05588111146bffe27572346b296"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 132,
+      "stratum": "mid",
+      "nominal_difficulty": 5,
+      "rung": "cfgpatch:mid",
+      "problem_sha256": "75ba36163b846190a07be93e23651ade2af61a17739cf1f3dfdc197b475895af"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900147,
+      "stratum": "hard",
+      "nominal_difficulty": 24,
+      "rung": 10,
+      "problem_sha256": "b52da8107831eae28c0ccae0c8c9a0914345e4402c0e960e53ef387e5c5cb268"
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900115,
+      "stratum": "hard",
+      "nominal_difficulty": 16,
+      "rung": 8,
+      "problem_sha256": "d861a310836e173c398593c5326f066b55d306b5a1a6271e11f523c4227d13c4"
+    }
+  ],
+  "hard_demos": {
+    "arithmetic": [
+      {
+        "family": "arithmetic",
+        "bank": "arithmetic_hi",
+        "problem_number": 900147,
+        "stratum": "demonstration",
+        "nominal_difficulty": 26,
+        "rung": null,
+        "problem_sha256": "9b90161f30501c6a69b1c9ce05c407c5402e3ca423d09c0226d612dbed9284bf"
+      },
+      {
+        "family": "arithmetic",
+        "bank": "arithmetic_hi",
+        "problem_number": 900134,
+        "stratum": "demonstration",
+        "nominal_difficulty": 20,
+        "rung": null,
+        "problem_sha256": "a61a187c043eb4cce27f3c9634dd34f902190f4236d4a00cf3e8baea7108b3f1"
+      },
+      {
+        "family": "arithmetic",
+        "bank": "arithmetic_hi",
+        "problem_number": 900126,
+        "stratum": "demonstration",
+        "nominal_difficulty": 20,
+        "rung": null,
+        "problem_sha256": "a4efea66d4b59ba12c599c4052802bc52c587739a182682af7298f5a053cd7ae"
+      }
+    ],
+    "brew": [
+      {
+        "family": "brew",
+        "bank": "brew_v2s",
+        "problem_number": 960102,
+        "stratum": "demonstration",
+        "nominal_difficulty": 3,
+        "rung": 1,
+        "problem_sha256": "5700cda674630f51e984ca97cc99af27faa9373e5d70b4532c059b21d04dfd42"
+      },
+      {
+        "family": "brew",
+        "bank": "brew_v2s",
+        "problem_number": 960137,
+        "stratum": "demonstration",
+        "nominal_difficulty": 5,
+        "rung": 2,
+        "problem_sha256": "def3d3452c6ff37990f8dd232659b185b675265330905f51dcbee3894532af01"
+      },
+      {
+        "family": "brew",
+        "bank": "brew_v2s",
+        "problem_number": 960139,
+        "stratum": "demonstration",
+        "nominal_difficulty": 5,
+        "rung": 2,
+        "problem_sha256": "fd91ed006baa86ccfceb31a923c49b268383273d44ca111ec64cefa7e38f14ae"
+      }
+    ],
+    "chain": [
+      {
+        "family": "chain",
+        "bank": "chain_hi",
+        "problem_number": 900157,
+        "stratum": "demonstration",
+        "nominal_difficulty": 14,
+        "rung": 9,
+        "problem_sha256": "786d1f04370f1c4017cb2069b2b5d59623871ba47a7ad869d6bb95b29f53c2ae"
+      },
+      {
+        "family": "chain",
+        "bank": "chain_hi",
+        "problem_number": 900107,
+        "stratum": "demonstration",
+        "nominal_difficulty": 10,
+        "rung": 7,
+        "problem_sha256": "ffab3e0d63ed180dc383efc1e7c23573e7a162ec7709a614206dfbe213397b47"
+      },
+      {
+        "family": "chain",
+        "bank": "chain_hi",
+        "problem_number": 900150,
+        "stratum": "demonstration",
+        "nominal_difficulty": 14,
+        "rung": 9,
+        "problem_sha256": "afddf1783af2d70d541db852db257136a993b7d5fbdd3f24a3de0097e9ce0af6"
+      }
+    ],
+    "cfgpatch": [
+      {
+        "family": "cfgpatch",
+        "bank": "cfgpatch_hi",
+        "problem_number": 900137,
+        "stratum": "demonstration",
+        "nominal_difficulty": 20,
+        "rung": 9,
+        "problem_sha256": "d3c6e66b87b516b8b813c8096bdc7c1d1cc108d67138d90d3355a7fce014911c"
+      },
+      {
+        "family": "cfgpatch",
+        "bank": "cfgpatch_hi",
+        "problem_number": 900135,
+        "stratum": "demonstration",
+        "nominal_difficulty": 20,
+        "rung": 9,
+        "problem_sha256": "63ed0d0b284aaac7a585ed395c6164ea9695a1050e385ff0536f2f7dc959ed16"
+      },
+      {
+        "family": "cfgpatch",
+        "bank": "cfgpatch_hi",
+        "problem_number": 900113,
+        "stratum": "demonstration",
+        "nominal_difficulty": 16,
+        "rung": 8,
+        "problem_sha256": "c82afae3289a5a45bd223c1e7a56ff5981574975bda3fe8fef2892b8a2913f21"
+      }
+    ]
+  },
+  "note": "Hard supplemental items include unscored NCRI rungs; this is a matched diagnostic, not an NCRI score. brew_v2s h7 is used instead of the explicitly breadth-confounded brew_hi. Arithmetic operator counts and other difficulty labels are not cross-task equivalent serial depths.",
+  "astra": "One published Astra response per selected item. Fable has two new independent draws. Do not count duplicated baseline references as extra Astra draws."
+}

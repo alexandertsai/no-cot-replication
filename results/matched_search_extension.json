@@ -1,0 +1,14 @@
+{
+  "reason": "Six planned configurations did not cleanly validate lookup or configuration patches. Add zero-demonstration variants before spending any inference on them.",
+  "cost_before_extension_usd": 2.6253,
+  "new_candidates": [
+    "strong_schema_zero",
+    "strong_plain_zero"
+  ],
+  "selection": "Existing validated arithmetic/chain recipes and selected main items remain fixed. New variants are eligible only after the previous candidates fail. Validation still depends only on no-CoT validity.",
+  "cap_usd": 4,
+  "notes": [
+    "For banks with one canonical shot, strong_plain_one has the same wire as strong_plain; those calls are serving repeats rather than distinct prompt configurations.",
+    "No new item selection, no gold changes, no new Astra calls."
+  ]
+}

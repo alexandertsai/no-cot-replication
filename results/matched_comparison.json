@@ -1,0 +1,306 @@
+{
+  "cell_quality": {
+    "arithmetic/arithmetic": {
+      "fable_pooled_draw_quality": {
+        "attempts": 20,
+        "scorable": 20,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "astra_quality": {
+        "attempts": 10,
+        "scorable": 10,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "qualified": true
+    },
+    "arithmetic/arithmetic_hi": {
+      "fable_pooled_draw_quality": {
+        "attempts": 10,
+        "scorable": 10,
+        "invalid": 3,
+        "missing": 0,
+        "invalid_fraction": 0.3,
+        "missing_fraction": 0.0
+      },
+      "astra_quality": {
+        "attempts": 5,
+        "scorable": 5,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "qualified": false
+    },
+    "brew/brew": {
+      "fable_pooled_draw_quality": {
+        "attempts": 20,
+        "scorable": 20,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "astra_quality": {
+        "attempts": 10,
+        "scorable": 10,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "qualified": true
+    },
+    "brew/brew_v2s": {
+      "fable_pooled_draw_quality": {
+        "attempts": 10,
+        "scorable": 10,
+        "invalid": 3,
+        "missing": 0,
+        "invalid_fraction": 0.3,
+        "missing_fraction": 0.0
+      },
+      "astra_quality": {
+        "attempts": 5,
+        "scorable": 5,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "qualified": false
+    },
+    "cfgpatch/cfgpatch": {
+      "fable_pooled_draw_quality": {
+        "attempts": 20,
+        "scorable": 20,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "astra_quality": {
+        "attempts": 10,
+        "scorable": 10,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "qualified": true
+    },
+    "cfgpatch/cfgpatch_hi": {
+      "fable_pooled_draw_quality": {
+        "attempts": 10,
+        "scorable": 10,
+        "invalid": 2,
+        "missing": 0,
+        "invalid_fraction": 0.2,
+        "missing_fraction": 0.0
+      },
+      "astra_quality": {
+        "attempts": 5,
+        "scorable": 5,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "qualified": true
+    },
+    "chain/chain": {
+      "fable_pooled_draw_quality": {
+        "attempts": 20,
+        "scorable": 20,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "astra_quality": {
+        "attempts": 10,
+        "scorable": 10,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "qualified": true
+    },
+    "chain/chain_hi": {
+      "fable_pooled_draw_quality": {
+        "attempts": 10,
+        "scorable": 10,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "astra_quality": {
+        "attempts": 5,
+        "scorable": 5,
+        "invalid": 0,
+        "missing": 0,
+        "invalid_fraction": 0.0,
+        "missing_fraction": 0.0
+      },
+      "qualified": true
+    }
+  },
+  "draws": {
+    "1": {
+      "all_matched_scorable": {
+        "n_pairs": 60,
+        "fable_correct": 37,
+        "astra_correct": 44,
+        "fable_accuracy": 0.6166666666666667,
+        "astra_accuracy": 0.7333333333333333,
+        "fable_minus_astra": -0.11666666666666667,
+        "fable_only_correct": 3,
+        "astra_only_correct": 10,
+        "exploratory_exact_mcnemar_p": 0.09228515625
+      },
+      "qualified_cells_only": {
+        "n_pairs": 50,
+        "fable_correct": 35,
+        "astra_correct": 43,
+        "fable_accuracy": 0.7,
+        "astra_accuracy": 0.86,
+        "fable_minus_astra": -0.16,
+        "fable_only_correct": 1,
+        "astra_only_correct": 9,
+        "exploratory_exact_mcnemar_p": 0.021484375
+      },
+      "by_family": {
+        "arithmetic": {
+          "n_pairs": 15,
+          "fable_correct": 10,
+          "astra_correct": 11,
+          "fable_accuracy": 0.6666666666666666,
+          "astra_accuracy": 0.7333333333333333,
+          "fable_minus_astra": -0.06666666666666667,
+          "fable_only_correct": 1,
+          "astra_only_correct": 2,
+          "exploratory_exact_mcnemar_p": 1
+        },
+        "brew": {
+          "n_pairs": 15,
+          "fable_correct": 10,
+          "astra_correct": 10,
+          "fable_accuracy": 0.6666666666666666,
+          "astra_accuracy": 0.6666666666666666,
+          "fable_minus_astra": 0.0,
+          "fable_only_correct": 1,
+          "astra_only_correct": 1,
+          "exploratory_exact_mcnemar_p": 1
+        },
+        "chain": {
+          "n_pairs": 15,
+          "fable_correct": 8,
+          "astra_correct": 11,
+          "fable_accuracy": 0.5333333333333333,
+          "astra_accuracy": 0.7333333333333333,
+          "fable_minus_astra": -0.2,
+          "fable_only_correct": 1,
+          "astra_only_correct": 4,
+          "exploratory_exact_mcnemar_p": 0.375
+        },
+        "cfgpatch": {
+          "n_pairs": 15,
+          "fable_correct": 9,
+          "astra_correct": 12,
+          "fable_accuracy": 0.6,
+          "astra_accuracy": 0.8,
+          "fable_minus_astra": -0.2,
+          "fable_only_correct": 0,
+          "astra_only_correct": 3,
+          "exploratory_exact_mcnemar_p": 0.25
+        }
+      }
+    },
+    "2": {
+      "all_matched_scorable": {
+        "n_pairs": 60,
+        "fable_correct": 35,
+        "astra_correct": 44,
+        "fable_accuracy": 0.5833333333333334,
+        "astra_accuracy": 0.7333333333333333,
+        "fable_minus_astra": -0.15,
+        "fable_only_correct": 1,
+        "astra_only_correct": 10,
+        "exploratory_exact_mcnemar_p": 0.01171875
+      },
+      "qualified_cells_only": {
+        "n_pairs": 50,
+        "fable_correct": 34,
+        "astra_correct": 43,
+        "fable_accuracy": 0.68,
+        "astra_accuracy": 0.86,
+        "fable_minus_astra": -0.18,
+        "fable_only_correct": 0,
+        "astra_only_correct": 9,
+        "exploratory_exact_mcnemar_p": 0.00390625
+      },
+      "by_family": {
+        "arithmetic": {
+          "n_pairs": 15,
+          "fable_correct": 10,
+          "astra_correct": 11,
+          "fable_accuracy": 0.6666666666666666,
+          "astra_accuracy": 0.7333333333333333,
+          "fable_minus_astra": -0.06666666666666667,
+          "fable_only_correct": 1,
+          "astra_only_correct": 2,
+          "exploratory_exact_mcnemar_p": 1
+        },
+        "brew": {
+          "n_pairs": 15,
+          "fable_correct": 9,
+          "astra_correct": 10,
+          "fable_accuracy": 0.6,
+          "astra_accuracy": 0.6666666666666666,
+          "fable_minus_astra": -0.06666666666666667,
+          "fable_only_correct": 0,
+          "astra_only_correct": 1,
+          "exploratory_exact_mcnemar_p": 1
+        },
+        "chain": {
+          "n_pairs": 15,
+          "fable_correct": 7,
+          "astra_correct": 11,
+          "fable_accuracy": 0.4666666666666667,
+          "astra_accuracy": 0.7333333333333333,
+          "fable_minus_astra": -0.26666666666666666,
+          "fable_only_correct": 0,
+          "astra_only_correct": 4,
+          "exploratory_exact_mcnemar_p": 0.125
+        },
+        "cfgpatch": {
+          "n_pairs": 15,
+          "fable_correct": 9,
+          "astra_correct": 12,
+          "fable_accuracy": 0.6,
+          "astra_accuracy": 0.8,
+          "fable_minus_astra": -0.2,
+          "fable_only_correct": 0,
+          "astra_only_correct": 3,
+          "exploratory_exact_mcnemar_p": 0.25
+        }
+      }
+    }
+  },
+  "notes": [
+    "One fixed published Astra draw per item. Fable draw2 is a repeat, not an independent second set of problems.",
+    "All-matched-scorable results are operational no-CoT success scores and can include cells with excessive reasoning failures.",
+    "Qualified-cell results exclude a source-bank cell if >20% of scorable replies are invalid, or >20% of attempts are missing, for either model. Fable quality is assessed across both draws to use one common inclusion set.",
+    "Missingness cutoff is an additional conservative comparison guard, not an assertion that Neel applied the identical missingness rule.",
+    "McNemar tests are exploratory, conditional on this fixed selected item set and published Astra realization; they do not establish overall model rankings.",
+    "Astra and Fable have different serving routes and model-specific suppression recipes; same questions and grader improve comparability but do not reproduce normalized 7.2-step calibration."
+  ]
+}

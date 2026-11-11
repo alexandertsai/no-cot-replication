@@ -1,0 +1,373 @@
+{
+  "reference_recipe": {
+    "name": "v2_schema",
+    "system": "v2",
+    "schema": true,
+    "shots": "canonical"
+  },
+  "counts": [
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 118,
+      "input_tokens": 1730
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 108,
+      "input_tokens": 1734
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 67,
+      "input_tokens": 1742
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 87,
+      "input_tokens": 1730
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 56,
+      "input_tokens": 1735
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 39,
+      "input_tokens": 1750
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 139,
+      "input_tokens": 1755
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 14,
+      "input_tokens": 1757
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 24,
+      "input_tokens": 1771
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic",
+      "problem_number": 54,
+      "input_tokens": 1778
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900112,
+      "input_tokens": 1798
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900128,
+      "input_tokens": 1821
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900148,
+      "input_tokens": 1851
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900109,
+      "input_tokens": 1800
+    },
+    {
+      "family": "arithmetic",
+      "bank": "arithmetic_hi",
+      "problem_number": 900127,
+      "input_tokens": 1819
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 54,
+      "input_tokens": 1148
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 59,
+      "input_tokens": 1152
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 52,
+      "input_tokens": 1148
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 58,
+      "input_tokens": 1152
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 55,
+      "input_tokens": 1148
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 67,
+      "input_tokens": 1156
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 71,
+      "input_tokens": 1160
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 28,
+      "input_tokens": 1164
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 17,
+      "input_tokens": 1156
+    },
+    {
+      "family": "brew",
+      "bank": "brew",
+      "problem_number": 72,
+      "input_tokens": 1170
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960144,
+      "input_tokens": 1934
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960157,
+      "input_tokens": 1935
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960159,
+      "input_tokens": 1934
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960145,
+      "input_tokens": 1935
+    },
+    {
+      "family": "brew",
+      "bank": "brew_v2s",
+      "problem_number": 960155,
+      "input_tokens": 1974
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 16,
+      "input_tokens": 679
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 21,
+      "input_tokens": 698
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 12,
+      "input_tokens": 679
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 22,
+      "input_tokens": 690
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 15,
+      "input_tokens": 683
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 35,
+      "input_tokens": 747
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 39,
+      "input_tokens": 750
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 45,
+      "input_tokens": 784
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 32,
+      "input_tokens": 742
+    },
+    {
+      "family": "chain",
+      "bank": "chain",
+      "problem_number": 38,
+      "input_tokens": 763
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900114,
+      "input_tokens": 854
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900132,
+      "input_tokens": 889
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900154,
+      "input_tokens": 933
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900113,
+      "input_tokens": 854
+    },
+    {
+      "family": "chain",
+      "bank": "chain_hi",
+      "problem_number": 900129,
+      "input_tokens": 893
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 105,
+      "input_tokens": 1318
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 109,
+      "input_tokens": 1324
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 13,
+      "input_tokens": 1335
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 16,
+      "input_tokens": 1323
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 15,
+      "input_tokens": 1315
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 125,
+      "input_tokens": 1430
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 137,
+      "input_tokens": 1364
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 130,
+      "input_tokens": 1344
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 139,
+      "input_tokens": 1440
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch",
+      "problem_number": 128,
+      "input_tokens": 1366
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900100,
+      "input_tokens": 1690
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900129,
+      "input_tokens": 1798
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900143,
+      "input_tokens": 1905
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900110,
+      "input_tokens": 1714
+    },
+    {
+      "family": "cfgpatch",
+      "bank": "cfgpatch_hi",
+      "problem_number": 900136,
+      "input_tokens": 1840
+    }
+  ],
+  "main_120_input_tokens": 163962,
+  "main_expected_standard_usd_at_12_output_tokens_per_response": 1.369296,
+  "note": "Forecast only; validation can choose other recipes. Actual per-request counts and budget guard apply before every inference call."
+}

@@ -1,0 +1,42 @@
+{
+  "arithmetic": {
+    "status": "validated",
+    "recipe": {
+      "name": "strong_schema",
+      "system": "strong",
+      "schema": true,
+      "shots": "canonical"
+    }
+  },
+  "brew": {
+    "status": "exploratory_completion_partial_validation",
+    "recipe": {
+      "name": "strong_schema_zero",
+      "system": "strong",
+      "schema": true,
+      "shots": "zero"
+    },
+    "probe_valid": 9,
+    "probe_n": 10
+  },
+  "chain": {
+    "status": "validated",
+    "recipe": {
+      "name": "strong_schema_hard3",
+      "system": "strong",
+      "schema": true,
+      "shots": "hard3"
+    }
+  },
+  "cfgpatch": {
+    "status": "exploratory_completion_partial_validation",
+    "recipe": {
+      "name": "strong_schema_zero",
+      "system": "strong",
+      "schema": true,
+      "shots": "zero"
+    },
+    "probe_valid": 8,
+    "probe_n": 10
+  }
+}

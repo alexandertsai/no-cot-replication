@@ -119,3 +119,46 @@ Depth 9 has 50% missing responses. Depth 11 has 60% missing and 25% invalid amon
 The stronger instructions and harder demonstrations changed the setup from the original 94% subset. The custom items are also sensitivity-filtered. Do not merge the original and continuation accuracy curves.
 
 Reproduce metadata summaries with `python budget_continuation.py summary` and `python fit_continuation.py`. Running `python budget_continuation.py` resumes existing calls; from an empty output directory it performs paid inference under its budget guard. Keep the local private ledger and result rows when resuming, and do not delete records to retry. All manifests, recipe settings, costs, validity flags, and fits are under `results/continuation_*`. Raw replies, thinking content, questions, and gold answers remain in ignored `private/`.
+
+## Matched original serial-task comparison
+
+### Frozen selection and baseline
+
+The user authorized a separate $4 run, intended to compare Fable 5.2 against existing Astra results on identical released problems. Seed `20261112` selected **60 previously untested Fable main items**, 15 per family, with five low, five middle, and five hard items. Within a stratum, nominal difficulty levels were sampled round-robin with seeded shuffled item order. Selection used item availability, difficulty labels, and previous-exposure exclusions, never Astra correctness. Five separate validation items per family and three potential hard demonstrations per family were reserved before inference. All three sets are disjoint. The public manifest contains IDs and hashes; task text and golds stay private.
+
+Families and banks: `arithmetic` / `arithmetic_hi`; `brew` / `brew_v2s` at h7; `chain` / `chain_hi`; and `cfgpatch` / `cfgpatch_hi`. The rejected `brew_hi` extension is explicitly breadth/scan-confounded in Neel's manifest, so it was not used. The harder banks include supplemental rungs not scored in NCRI. Difficulty labels vary by task and are not a common serial-step unit. No index or normalized depth is fitted.
+
+The baseline is the first published Astra response on each of the same 60 items. The shipped second Astra draw does not cover all harder banks. Both Fable repeats are compared against this one fixed Astra realization; it is not counted twice as independent Astra evidence. Both models are normalized consistently for JSON answer wrappers and regraded using the same upstream answer grader. All 60 Astra regrades agree with the published correctness verdicts, and all have explicit zero hidden-token discrepancy.
+
+### Recipe search and post-declared completion
+
+The six initial configurations varied the upstream immediate-recall/strong system instruction, plain versus JSON output, canonical versus three hard demonstrations, and one versus all available canonical examples. Search used only no-CoT validity, not answer correctness. For one-shot banks, the canonical and one-shot strong plain configurations have identical wires; their calls are serving repeats, not independent prompt designs. The initial configurations validated arithmetic and state-machine tasks on five reserved items twice. Fresh maximum-effort controls showed nonzero thinking counters.
+
+Lookup and patches did not meet the strict zero-invalid validation rule. Two zero-demonstration configurations were declared and tested next. Strong JSON without demonstrations gave 9/10 valid lookup probes and 8/10 valid patch probes. Before buying their held-out evaluations, a further completion plan explicitly relaxed the exploratory criterion to at least 8/10 valid probes while retaining every reasoning failure and source-bank validity flags. This was post-declared and must not be described as clean confirmatory validation. The hard validation subsets had higher invalid fractions than those pooled task figures. Controls for these two tasks also returned nonzero thinking counters.
+
+Selected settings: arithmetic `strong_schema` (canonical demonstrations); state machine `strong_schema_hard3`; lookup and patches `strong_schema_zero` under the exploratory completion. All use native Anthropic Messages, adaptive thinking, low effort, a 300-output-token JSON cap, and the upstream v2 plus strong no-deliberation text. Control calls use maximum effort, no no-deliberation system, and a 512-token cap. There were no fresh Astra calls, browser actions, or remote-compute calls.
+
+### Results and exclusions
+
+All **120 Fable main responses** arrived without blind usage or truncation. Eight used thinking tokens and are wrong in the primary score. The table below keeps them in the denominator.
+
+| Family | Fable draw1 | Fable draw2 | Published Astra |
+|---|---:|---:|---:|
+| arithmetic | 10/15 | 10/15 | 11/15 |
+| brew | 10/15 | 9/15 | 10/15 |
+| chain | 8/15 | 7/15 | 11/15 |
+| cfgpatch | 9/15 | 9/15 | 12/15 |
+
+Overall: Fable **37/60** and **35/60**, Astra **44/60**. The first Fable draw is the primary paired comparison; the second is a serving repeat on the same items. The exploratory exact McNemar p-values are 0.0923 and 0.0117, respectively; do not select the more favorable repeat or treat them as independent replications over new items.
+
+We also apply a common source-bank inclusion set: exclude a cell if either model has >20% invalid among scorable replies or >20% missing. Fable cell quality is evaluated across both draws, so the inclusion set does not change between repeats. The missingness cutoff is an additional conservative guard, not a claim of an identical Neel rule. Arithmetic-hi and brew-v2s each had 3/10 invalid Fable responses, excluding ten distinct items. The remaining **50** matched items give Fable **35/50 (70%)** and **34/50 (68%)**, Astra **43/50 (86%)**. This is a different 50-item set from the original easier subset. Exclusion depends on protocol validity, not answer correctness, but this qualified-subset analysis is still exploratory.
+
+### Budget and audit
+
+This matched run used **231 inference calls**: 107 probes, 4 controls, and 120 evaluations. Returned usage was **408,542 input tokens and 6,599 output tokens**. Estimated standard cost at the verified $8/M input and $40/M output rates is **$3.532296**, below the separate $4 cap. Prices are token-based calculations, not a retrieved account invoice.
+
+Every paid request was token-counted and reserved before transmission, with a 25% + 256 input-token allowance, full output cap, and a 20% rate margin. Settled usage was initially carried at 1.2x estimated standard cost; before exploratory completion this was changed to 1.1x so unused reserves could fund the remaining fixed tests while retaining a price margin. Unknown or failed requests retain their full reserve and are not automatically retried. The final conservative committed amount is **$3.885526**, still under $4. [Completion and budget revision](results/matched_completion_plan.json). The spending ledger stays only in ignored `private/matched_ledger.jsonl`, in accordance with the request to remove public ledgers.
+
+`python matched_serial.py prepare` reconstructs the frozen selection from the pinned local upstream data. `preflight` token-counts initial prompts without model inference. `run` is the strict initial recipe search and can perform paid calls from a fresh directory. `python complete_matched.py` is the separately declared exploratory completion, also budget-guarded. Existing rows are reused on resume; retain the private ledger for unsettled-request protection. Reproduce saved analyses for free with `python matched_serial.py summary` and `python analyze_matched.py`. Raw answers/thinking and the original questions/golds remain private.
+
+Public artifacts: [manifest](results/matched_manifest.json), [initial plan](results/matched_plan.json), [zero-shot extension](results/matched_search_extension.json), [completion plan](results/matched_completion_plan.json), [selected recipes](results/matched_recipes.json), [Fable metadata](results/matched_rows.jsonl), [Astra metadata](results/matched_astra.json), [summary](results/matched_summary.json), and [paired analysis](results/matched_comparison.json).
