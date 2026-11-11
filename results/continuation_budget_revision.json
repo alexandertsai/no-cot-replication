@@ -1,0 +1,7 @@
+{
+  "reason": "The initial cumulative reservation guard stopped before completing the lower bracket despite actual standard-price usage of about $1.33.",
+  "cap_usd": 4,
+  "new_guard": "For completed requests retain 2x their observed standard-price token cost. For unsettled requests retain full maximum reservation. Add the full next reservation before deciding whether to send.",
+  "unchanged": "No automatic retries; original per-request ledger preserved; unknown requests never refunded.",
+  "additional_depth4_group": "After the predefined depth5/6 downward expansion, measure one five-item depth4 group twice to anchor the transition, because 5/6/7 scores are noisy and high-depth cells have >20% invalid responses. Same frozen reserve pool and chosen recipe; no selection by individual item outcome."
+}

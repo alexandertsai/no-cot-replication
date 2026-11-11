@@ -15,7 +15,20 @@ Both models repeated the same outcomes on their second draws. All compared respo
 
 This small subset uses different serving/prompt formats and does not establish an overall model ranking.
 
-**Harder-task follow-up:** both tested prompts produced thinking tokens on the first depth-7 problem, so we stopped after two calls. No depth threshold was measured. [Details](results/hard_summary.json).
+## Harder arithmetic follow-up
+
+A stronger prompt plus ten harder demonstrations suppressed thinking more reliably.
+
+| Dependent depth | No-CoT score |
+|---|---:|
+| 4 | 10/10 (100%) |
+| 5 | 6/10 (60%) |
+| 6 | 3/10 (30%) |
+| 7 | 4/9 (44%); one truncated response |
+
+Five unique problems per depth, tested twice. Depths 9 and 11 had too many truncated or reasoned responses for reliable depth estimates. A descriptive 50% fit is around **6 steps**, with very wide uncertainty. This is **not directly comparable to Neel’s normalized 7.2-step estimate**.
+
+**Continuation cost: approximately $1.62 of the $4 cap** ($2.97 across all Fable inference so far), estimated from published standard rates. [Detailed results](results/continuation_summary.json) · [Fit and uncertainty](results/continuation_depth_fit.json)
 
 Inspired by **Neel Nanda’s [article](https://www.lesswrong.com/posts/eRmzz8J8Qkzqvzrgg/astra-can-do-a-concerning-amount-with-no-chain-of-thought)**, using his [nocot-bench](https://github.com/neelnanda-io/nocot-bench) data and grader.
 

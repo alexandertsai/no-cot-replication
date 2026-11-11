@@ -1,0 +1,12 @@
+{
+  "pricing_source": "https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2",
+  "standard_usd_per_million": {
+    "input": 8,
+    "output": 40
+  },
+  "original_subset_usd": 1.307232,
+  "first_two_hard_probes_usd": 0.04,
+  "continuation_usd": 1.621344,
+  "all_fable_inference_usd": 2.9685759999999997,
+  "note": "Estimated from returned usage at published standard rates, not a retrieved invoice. No cache usage or fast mode requested."
+}

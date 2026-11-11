@@ -84,3 +84,38 @@ Native token counting estimated 54,166 input tokens for the planned 30 calls. On
 Total additional usage: **3,680 input tokens and 264 output tokens**. No further hard items or repeats were purchased. The existing positive control had already demonstrated a responsive counter. We did not fit a sigmoid or estimate a 50% threshold from these failed protocol probes. A failed no-CoT check does not establish inability to solve the arithmetic task without thinking under another elicitation method.
 
 `python hard_arithmetic.py prepare` regenerates the private diagnostic items. `python hard_arithmetic.py summary` reproduces the report. Both inference runners stop on the first invalid response and refuse to resume after a recorded invalid response. `replicate.request` accepts an optional system text for the separately recorded repair; the original recipe remains the default. [Manifest](results/hard_manifest.json), [original attempt](results/hard_rows.jsonl), [repair recipe](results/hard_recipe.json), [repair attempt](results/hard_recipe_validation.jsonl), [summary](results/hard_summary.json).
+
+## Budgeted continuation: a usable recipe, limited depth evidence
+
+The user authorized up to $4 in additional token spending. Published Fable 5.2 standard rates were verified at $8/M input and $40/M output tokens ([source](https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2)). No fast mode, prompt caching, external compute, or browser was used. Seven recipes were screened in fixed order on three reserved items at depths 7/9/11. Recipe selection used only no-CoT validity, never answer accuracy. The eighth planned recipe was not needed.
+
+The selected recipe, `strong_plain_hard10`, uses upstream v2 plus its strong no-deliberation paragraph, ten harder gold-answer demonstration turns, plain output, low effort, and a 100-token cap. Demonstration IDs are disjoint from screening/validation and measured items. All ten validation responses (five reserved items, two draws each) were clean. A fresh max-effort control returned 170 thinking tokens, validating the counter. Screen and validation calls are distinct requests even where their item IDs coincide.
+
+The main sample contains five held-out problems at each of depths 7/9/11, two draws each. The predefined downward expansion measured depths 5/6. After seeing noisy 5/6/7 scores, one additional group at depth 4 was declared before its ten calls to anchor the lower end. This was an adaptive diagnostic, not a preregistered confirmatory test.
+
+There were **92 continuation inference calls**: 21 screens, 10 validations, 1 control, and 60 main responses over 30 distinct problems. Returned usage: **182,983 input tokens and 3,937 output tokens**. Estimated standard token cost: **$1.621344**. Estimated total across the entire Fable experiment, including the original subset and first two hard probes: **$2.968576**. These are token-price calculations, not account invoices.
+
+Before every paid request, the script calls native token counting and reserves at twice published standard rates, allowing 25% + 256 prompt tokens above the count and the full output limit. The initial guard accumulated all maximum reservations and paused at 76 calls despite an estimated actual cost of $1.33. It was revised to release unused reservations only after usage arrives: completed requests retain twice their calculated cost; unsettled requests keep their full maximum. No retry is automatic. This allowed completion without changing the $4 cap. The original ledger and revision note are preserved. Final conservative accounted bound: **$3.242688**, below $4. Summing historical per-call maxima is not the simultaneous budget commitment or actual spend.
+
+### Scoring and failures
+
+Nontruncated reasoned replies count as wrong in the primary score. Truncated and blind responses are missing and excluded from its denominator. The summary also separately reports success per all attempted calls; it must not be confused with the primary score. No counters were blind in this continuation.
+
+| Depth | Primary correct/scorable | Valid responses | Truncated/missing | Other no-CoT-invalid |
+|---|---:|---:|---:|---:|
+| 4 | 10/10 | 10/10 | 0 | 0 |
+| 5 | 6/10 | 10/10 | 0 | 0 |
+| 6 | 3/10 | 9/10 | 0 | 1 |
+| 7 | 4/9 | 9/10 | 1 | 0 |
+| 9 | 0/5 | 5/10 | 5 | 0 |
+| 11 | 0/4 | 3/10 | 6 | 1 |
+
+Depth 9 has 50% missing responses. Depth 11 has 60% missing and 25% invalid among the four scorable responses. Neither enters the fit. High-depth protocol failure is not evidence that the model cannot compute at those depths under other elicitation methods.
+
+### Descriptive threshold fit
+
+`python fit_continuation.py` fits a decreasing logistic curve separately to each draw at depths 4/5/6/7. It never treats the second draw as new independent items. The zero-chance-floor model gives 50% crossings of approximately **6.04** and **5.82** structural steps. Nominal profile-likelihood 95% intervals are **4.78–12.80** and **4.32–16.36**, conditional on this small selected sample. They do not include task-design, adaptive selection, or full serving uncertainty. These are weak descriptive estimates, not precise model limits. They cannot be compared directly with Neel's cross-task normalized 7.2-step estimate.
+
+The stronger instructions and harder demonstrations changed the setup from the original 94% subset. The custom items are also sensitivity-filtered. Do not merge the original and continuation accuracy curves.
+
+Reproduce metadata summaries with `python budget_continuation.py summary` and `python fit_continuation.py`. Running `python budget_continuation.py` resumes existing calls; from an empty output directory it performs paid inference under its budget guard. Keep the ledger and rows together, and do not delete records to retry. All manifests, recipe settings, costs, validity flags, and fits are under `results/continuation_*`. Raw replies, thinking content, questions, and gold answers remain in ignored `private/`.

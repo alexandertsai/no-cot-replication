@@ -1,0 +1,80 @@
+{
+  "cap_usd": 4.0,
+  "cap_scope": "This continuation only, after the previous two probes.",
+  "rates": {
+    "input_per_million": 8,
+    "output_per_million": 40,
+    "cache_write_5m_per_million": 10,
+    "cache_write_1h_per_million": 16,
+    "cache_read_per_million": 0.2
+  },
+  "pricing_source": "https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2",
+  "reservation": "Before each transmission, twice the standard-price cost of settled responses plus all unsettled worst-case reservations plus the next worst-case reservation must be <= $4. Reserve uses 2x standard rates, 25% + 256 prompt-token allowance, and max output. Unused reservation is released only after usage arrives. No automatic retries.",
+  "recipes": [
+    {
+      "name": "plain_k10",
+      "shots": "standard10",
+      "system": "v2",
+      "schema": false
+    },
+    {
+      "name": "plain_k1",
+      "shots": "standard1",
+      "system": "v2",
+      "schema": false
+    },
+    {
+      "name": "schema_k1",
+      "shots": "standard1",
+      "system": "v2",
+      "schema": true
+    },
+    {
+      "name": "strong_plain_k10",
+      "shots": "standard10",
+      "system": "strong",
+      "schema": false
+    },
+    {
+      "name": "strong_plain_k1",
+      "shots": "standard1",
+      "system": "strong",
+      "schema": false
+    },
+    {
+      "name": "strong_schema_k1",
+      "shots": "standard1",
+      "system": "strong",
+      "schema": true
+    },
+    {
+      "name": "strong_plain_hard10",
+      "shots": "hard10",
+      "system": "strong",
+      "schema": false
+    },
+    {
+      "name": "strong_schema_hard10",
+      "shots": "hard10",
+      "system": "strong",
+      "schema": true
+    }
+  ],
+  "screen_ids": [
+    "custom-d7-6",
+    "custom-d9-6",
+    "custom-d11-6"
+  ],
+  "validation_ids": [
+    "custom-d5-6",
+    "custom-d6-6",
+    "custom-d7-6",
+    "custom-d9-6",
+    "custom-d11-6"
+  ],
+  "selection": "First recipe clean on 3 screen items plus 5 validation items on two draws; order fixed before inference, never select by accuracy. Separate held-out main items.",
+  "main": "5 held-out items/depth, 2 draws at 7,9,11; predefined downward expansion to 5 and 6; one additional post-declared depth4 anchor, recorded in continuation_budget_revision.json.",
+  "invalid_policy": "Screen failures reject a recipe, not the whole search. Nontruncated main reasoned rows score wrong; truncated/blind rows are missing. >20% invalid among scorable rows marks unmeasured; >20% missing is separately flagged as incomplete.",
+  "fresh_control": "One max-effort control on a screening item; counter must be present and >0.",
+  "structural_caveat": "These synthetic sensitivity-filtered diagnostic depths are not the normalized 7.2-step metric."
+}

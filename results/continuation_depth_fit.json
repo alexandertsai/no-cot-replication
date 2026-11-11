@@ -1,0 +1,88 @@
+{
+  "model": "claude-fable-5-2",
+  "recipe": "strong_plain_hard10",
+  "depths_included": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "depths_excluded": {
+    "9": "50% missing through truncation",
+    "11": "60% missing and >20% invalid among scorable rows"
+  },
+  "fits": {
+    "1": {
+      "depth50": 6.04,
+      "slope": 0.9754743339078331,
+      "nominal_profile95": [
+        4.78,
+        12.8
+      ],
+      "profile_interval_hits_grid_boundary": false,
+      "unique_items_in_draw": 20,
+      "counts": [
+        {
+          "depth": 4,
+          "correct": 5,
+          "n": 5
+        },
+        {
+          "depth": 5,
+          "correct": 3,
+          "n": 5
+        },
+        {
+          "depth": 6,
+          "correct": 2,
+          "n": 5
+        },
+        {
+          "depth": 7,
+          "correct": 2,
+          "n": 5
+        }
+      ]
+    },
+    "2": {
+      "depth50": 5.82,
+      "slope": 0.9754743339078331,
+      "nominal_profile95": [
+        4.32,
+        16.36
+      ],
+      "profile_interval_hits_grid_boundary": false,
+      "unique_items_in_draw": 19,
+      "counts": [
+        {
+          "depth": 4,
+          "correct": 5,
+          "n": 5
+        },
+        {
+          "depth": 5,
+          "correct": 3,
+          "n": 5
+        },
+        {
+          "depth": 6,
+          "correct": 1,
+          "n": 5
+        },
+        {
+          "depth": 7,
+          "correct": 2,
+          "n": 4
+        }
+      ]
+    }
+  },
+  "method": "Single-family logistic accuracy curve with zero chance floor. Primary score counts nontruncated reasoning as wrong and excludes truncated/blind responses. Fit each draw separately; do not double the sample size by pooling repeat answers.",
+  "limitations": [
+    "Five unique problems per depth; descriptive, highly uncertain estimate.",
+    "The nominal likelihood interval is conditional on this selected item set and adaptive depth selection; it does not include task-design, recipe-selection, or full serving uncertainty.",
+    "No chance-floor correction is used.",
+    "Dependent depth is structurally counted and locally +/-1 sensitivity-audited, not Neel's original cross-task normalized arithmetic-step units.",
+    "Cannot use these numbers for a direct 7.2-versus-Fable comparison."
+  ]
+}

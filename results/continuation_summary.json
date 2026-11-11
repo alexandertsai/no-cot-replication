@@ -1,0 +1,244 @@
+{
+  "cap_usd": 4.0,
+  "reserved_upper_usd": 3.242688,
+  "gross_historical_reservations_usd": 4.902,
+  "estimated_standard_usd": 1.621344,
+  "inference_requests_reserved": 92,
+  "responses_received": 92,
+  "input_tokens": 182983,
+  "output_tokens": 3937,
+  "recipes": {
+    "plain_k10": {
+      "responses": 3,
+      "valid": 0,
+      "reasoned": 3,
+      "blind": 0,
+      "truncated": 2,
+      "estimated_standard_usd": 0.049176
+    },
+    "plain_k1": {
+      "responses": 3,
+      "valid": 0,
+      "reasoned": 3,
+      "blind": 0,
+      "truncated": 3,
+      "estimated_standard_usd": 0.020592
+    },
+    "schema_k1": {
+      "responses": 3,
+      "valid": 1,
+      "reasoned": 2,
+      "blind": 0,
+      "truncated": 0,
+      "estimated_standard_usd": 0.034184
+    },
+    "strong_plain_k10": {
+      "responses": 3,
+      "valid": 0,
+      "reasoned": 3,
+      "blind": 0,
+      "truncated": 2,
+      "estimated_standard_usd": 0.053304
+    },
+    "strong_plain_k1": {
+      "responses": 3,
+      "valid": 1,
+      "reasoned": 2,
+      "blind": 0,
+      "truncated": 2,
+      "estimated_standard_usd": 0.02176
+    },
+    "strong_schema_k1": {
+      "responses": 3,
+      "valid": 1,
+      "reasoned": 2,
+      "blind": 0,
+      "truncated": 0,
+      "estimated_standard_usd": 0.032512
+    },
+    "strong_plain_hard10": {
+      "responses": 73,
+      "valid": 59,
+      "reasoned": 14,
+      "blind": 0,
+      "truncated": 12,
+      "estimated_standard_usd": 1.386936
+    }
+  },
+  "main": {
+    "4": {
+      "n_items": 5,
+      "n_responses": 10,
+      "scorable": 10,
+      "valid": 10,
+      "invalid_nontruncated": 0,
+      "truncated_missing": 0,
+      "blind_missing": 0,
+      "correct": 10,
+      "floor_accuracy": 1.0,
+      "all_attempt_success_rate": 1.0,
+      "conditional_valid_ceiling": 1.0,
+      "unmeasured_nonvalid_above_20pct": false,
+      "incomplete_over_20pct_missing": false,
+      "draws": {
+        "1": {
+          "attempts": 5,
+          "n": 5,
+          "correct": 5
+        },
+        "2": {
+          "attempts": 5,
+          "n": 5,
+          "correct": 5
+        }
+      }
+    },
+    "5": {
+      "n_items": 5,
+      "n_responses": 10,
+      "scorable": 10,
+      "valid": 10,
+      "invalid_nontruncated": 0,
+      "truncated_missing": 0,
+      "blind_missing": 0,
+      "correct": 6,
+      "floor_accuracy": 0.6,
+      "all_attempt_success_rate": 0.6,
+      "conditional_valid_ceiling": 0.6,
+      "unmeasured_nonvalid_above_20pct": false,
+      "incomplete_over_20pct_missing": false,
+      "draws": {
+        "1": {
+          "attempts": 5,
+          "n": 5,
+          "correct": 3
+        },
+        "2": {
+          "attempts": 5,
+          "n": 5,
+          "correct": 3
+        }
+      }
+    },
+    "6": {
+      "n_items": 5,
+      "n_responses": 10,
+      "scorable": 10,
+      "valid": 9,
+      "invalid_nontruncated": 1,
+      "truncated_missing": 0,
+      "blind_missing": 0,
+      "correct": 3,
+      "floor_accuracy": 0.3,
+      "all_attempt_success_rate": 0.3,
+      "conditional_valid_ceiling": 0.3333333333333333,
+      "unmeasured_nonvalid_above_20pct": false,
+      "incomplete_over_20pct_missing": false,
+      "draws": {
+        "1": {
+          "attempts": 5,
+          "n": 5,
+          "correct": 2
+        },
+        "2": {
+          "attempts": 5,
+          "n": 5,
+          "correct": 1
+        }
+      }
+    },
+    "7": {
+      "n_items": 5,
+      "n_responses": 10,
+      "scorable": 9,
+      "valid": 9,
+      "invalid_nontruncated": 0,
+      "truncated_missing": 1,
+      "blind_missing": 0,
+      "correct": 4,
+      "floor_accuracy": 0.4444444444444444,
+      "all_attempt_success_rate": 0.4,
+      "conditional_valid_ceiling": 0.4444444444444444,
+      "unmeasured_nonvalid_above_20pct": false,
+      "incomplete_over_20pct_missing": false,
+      "draws": {
+        "1": {
+          "attempts": 5,
+          "n": 5,
+          "correct": 2
+        },
+        "2": {
+          "attempts": 5,
+          "n": 4,
+          "correct": 2
+        }
+      }
+    },
+    "9": {
+      "n_items": 5,
+      "n_responses": 10,
+      "scorable": 5,
+      "valid": 5,
+      "invalid_nontruncated": 0,
+      "truncated_missing": 5,
+      "blind_missing": 0,
+      "correct": 0,
+      "floor_accuracy": 0.0,
+      "all_attempt_success_rate": 0.0,
+      "conditional_valid_ceiling": 0.0,
+      "unmeasured_nonvalid_above_20pct": false,
+      "incomplete_over_20pct_missing": true,
+      "draws": {
+        "1": {
+          "attempts": 5,
+          "n": 2,
+          "correct": 0
+        },
+        "2": {
+          "attempts": 5,
+          "n": 3,
+          "correct": 0
+        }
+      }
+    },
+    "11": {
+      "n_items": 5,
+      "n_responses": 10,
+      "scorable": 4,
+      "valid": 3,
+      "invalid_nontruncated": 1,
+      "truncated_missing": 6,
+      "blind_missing": 0,
+      "correct": 0,
+      "floor_accuracy": 0.0,
+      "all_attempt_success_rate": 0.0,
+      "conditional_valid_ceiling": 0.0,
+      "unmeasured_nonvalid_above_20pct": true,
+      "incomplete_over_20pct_missing": true,
+      "draws": {
+        "1": {
+          "attempts": 5,
+          "n": 2,
+          "correct": 0
+        },
+        "2": {
+          "attempts": 5,
+          "n": 2,
+          "correct": 0
+        }
+      }
+    }
+  },
+  "headline_normalized_threshold": null,
+  "notes": [
+    "Dollar figures use published standard token rates, not a retrieved invoice. Reserved upper bound is deliberately conservative.",
+    "Nontruncated no-CoT-invalid answers are wrong in the primary score. Truncated/blind responses are missing, not scored wrong; all-attempt success is a separate diagnostic. Missing/blind counters are never treated as zero.",
+    "Validation is selected only on cleanliness; score comparison uses held-out items.",
+    "A single-family structural/sensitivity-filtered threshold cannot be equated with Neel's normalized cross-task estimate."
+  ],
+  "descriptive_depth50_by_draw": {
+    "1": 6.04,
+    "2": 5.82
+  },
+  "depth_fit_details": "continuation_depth_fit.json"
+}
